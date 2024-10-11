@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.btn {
+	@apply shadow-[0px_4px_30px_0px_#3754F026];
+}
 .hero__ai {
 	background: -webkit-linear-gradient(
 		221.92deg,
@@ -12,4 +15,22 @@
 }
 .hero {
 	background-image: url("../public/Gradient\ Group.png");
+}
+.feature {
+	background-image: linear-gradient(
+			0deg,
+			rgba(61, 34, 120, 0.75),
+			rgba(61, 34, 120, 0.75)
+		),
+		linear-gradient(0deg, rgba(15, 10, 25, 0.4), rgba(15, 10, 25, 0.4)),
+		url("../public/features.png");
+}
+.card {
+	background: linear-gradient(
+		111.61deg,
+		rgba(173, 161, 201, 0.24) 15.17%,
+		rgba(142, 125, 179, 0.3) 95.84%
+	);
+	backdrop-filter: blur(13px);
+	box-shadow: -3px 11px 41px 0px #9f9f9f26;
 }
