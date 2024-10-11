@@ -34,7 +34,7 @@ const Hero = () => {
 					</button>
 				</div>
 
-				<Image src={hero} alt="hero" />
+				<Image src={hero} alt="hero" priority />
 			</div>
 		</section>
 	);
