@@ -1,15 +1,23 @@
 import Image from "next/image";
 import hero from "@/public/hero.svg";
 import Line from "@/public/line.png";
+import BG from "@/public/Gradient Group.webp";
 
 const Hero = () => {
 	return (
 		<section
-			className="py-20 px-14 lg:px-28 xl:px-32 hero
-            bg-cover
-            bg-no-repeat
-            bg-center"
+			className="py-20 relative px-14 lg:px-28 xl:px-32 
+            "
 		>
+			<Image
+				src={BG}
+				alt="bg"
+				fill
+				className="hero object-cover"
+				quality={100}
+				sizes="100vw"
+				priority
+			/>
 			<div className=" gap-20 lg:gap-40 mx-auto flex flex-col lg:flex-row items-center">
 				<div>
 					<h1 className="max-w-full text-3xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">

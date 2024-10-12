@@ -14,7 +14,8 @@
 	-webkit-text-fill-color: transparent;
 }
 .hero {
-	background-image: url("../public/Gradient\ Group.webp");
+	/* background-image: url("../public/Gradient\ Group.webp"); */
+	z-index: -1;
 }
 .feature {
 	background-image: linear-gradient(
