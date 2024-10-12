@@ -15,7 +15,7 @@ const Hero = () => {
 				fill
 				className="hidden md:block hero object-cover"
 				quality={100}
-				priority
+				loading="lazy"
 			/>
 			<div className=" gap-20 lg:gap-40 mx-auto flex flex-col lg:flex-row items-center">
 				<div>
@@ -41,7 +41,7 @@ const Hero = () => {
 					</button>
 				</div>
 
-				<Image src={hero} alt="hero" priority />
+				<Image src={hero} alt="hero" priority loading="eager" />
 			</div>
 		</section>
 	);
