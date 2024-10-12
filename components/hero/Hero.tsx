@@ -13,9 +13,8 @@ const Hero = () => {
 				src={BG}
 				alt="bg"
 				fill
-				className="hero object-cover"
+				className="hidden md:block hero object-cover"
 				quality={100}
-				sizes="100vw"
 				priority
 			/>
 			<div className=" gap-20 lg:gap-40 mx-auto flex flex-col lg:flex-row items-center">
