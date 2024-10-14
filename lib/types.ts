@@ -14,3 +14,8 @@ export interface TestimonialCard {
 	name: string;
 	designation: string;
 }
+export interface InsightsProps {
+	image: any;
+	title: string;
+	statement: string;
+}

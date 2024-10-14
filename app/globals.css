@@ -4,6 +4,9 @@
 .btn {
 	@apply shadow-[0px_4px_30px_0px_#3754F026];
 }
+.faqs {
+	box-shadow: 0px 2px 15px 0px #0f101714;
+}
 .hero__ai {
 	background: -webkit-linear-gradient(
 		221.92deg,
@@ -46,4 +49,47 @@
 	border-radius: 20px;
 	padding: 25px;
 	max-width: 360px;
+}
+.slick-list {
+	padding: 0 50px 60px 0 !important;
+}
+
+.slick-dots {
+	display: flex !important
+	;
+}
+
+.slick-slide:not(.slick-active) {
+	backdrop-filter: blur(18px);
+	opacity: 0.4;
+}
+.slick-dots li:not(slick-active) {
+	margin-right: 1rem !important;
+}
+.slick-dots li button:before {
+	content: " " !important;
+}
+.slick-dots li button {
+	background: rgba(61, 34, 120, 0.2) !important;
+	border-radius: 9999px;
+}
+.slick-dots li:not(slick-active) button {
+	height: 20px !important;
+}
+.slick-dots li.slick-active button {
+	background: #3d2278 !important;
+	width: 45px !important;
+	border-radius: 8px !important;
+	height: 20px !important;
+	opacity: 1 !important;
+}
+.slick-dots li:has(.slick-active) {
+	margin-right: 1rem !important;
+}
+.slick-dots li {
+	width: max-content !important;
+	height: 0 !important;
+}
+.slick-slide > div {
+	margin-inline: 10px;
 }
