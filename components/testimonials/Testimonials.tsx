@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
 	return (
-		<div className="lg:px-28 xl:px-32 py-20 px-14">
+		<div className="lg:px-28 xl:px-32 py-20 px-10">
 			<div
 				className=" max-w-7xl mx-auto 
     "

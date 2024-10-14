@@ -4,7 +4,7 @@ import Feature from "./Feature";
 const FeaturesTools = () => {
 	return (
 		<div
-			className="feature py-20 px-14 lg:px-28 xl:px-32 bg-cover
+			className="feature py-20 px-10 lg:px-28 xl:px-32 bg-cover
             bg-no-repeat
             "
 		>

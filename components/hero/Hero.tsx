@@ -6,7 +6,7 @@ import BG from "@/public/Gradient Group.webp";
 const Hero = () => {
 	return (
 		<section
-			className="py-20 relative px-14 lg:px-28 xl:px-32 
+			className="py-20 relative px-10 lg:px-28 xl:px-32 
             "
 		>
 			<Image
