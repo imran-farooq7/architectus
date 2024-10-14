@@ -35,3 +35,15 @@
 	backdrop-filter: blur(13px);
 	box-shadow: -3px 11px 41px 0px #9f9f9f26;
 }
+.tcard {
+	background: linear-gradient(
+		111.61deg,
+		rgba(255, 255, 255, 0.6) 15.17%,
+		rgba(255, 255, 255, 0.4) 95.84%
+	);
+	backdrop-filter: blur(13px);
+	box-shadow: 0px 2px 27px 0px #0f101714;
+	border-radius: 20px;
+	padding: 25px;
+	max-width: 360px;
+}

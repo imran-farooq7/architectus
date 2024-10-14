@@ -13,9 +13,8 @@ const Hero = () => {
 				src={BG}
 				alt="bg"
 				fill
-				className="hidden md:block hero object-cover"
+				className=" hero object-cover"
 				quality={100}
-				loading="lazy"
 			/>
 			<div className=" gap-20 lg:gap-40 mx-auto flex flex-col lg:flex-row items-center">
 				<div>
@@ -41,7 +40,7 @@ const Hero = () => {
 					</button>
 				</div>
 
-				<Image src={hero} alt="hero" priority loading="eager" />
+				<Image src={hero} alt="hero" priority />
 			</div>
 		</section>
 	);

@@ -7,3 +7,10 @@ export interface FeatureCardProps {
 	text: string;
 	href: string;
 }
+export interface TestimonialCard {
+	avatar: any;
+	reviews: any;
+	statement: string;
+	name: string;
+	designation: string;
+}
