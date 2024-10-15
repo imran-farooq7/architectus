@@ -1,6 +1,7 @@
 export interface NavLinkProps {
 	href: string;
 	text: string;
+	footer?: boolean;
 }
 export interface FeatureCardProps {
 	title: string;
