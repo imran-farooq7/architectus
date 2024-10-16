@@ -15,7 +15,6 @@ export default function Home() {
 			<Insights />
 			<Faqs />
 			<CallToAction />
-			<Footer />
 		</>
 	);
 }

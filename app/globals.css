@@ -7,6 +7,20 @@
 .faqs {
 	box-shadow: 0px 2px 15px 0px #0f101714;
 }
+.rtrs-star-container {
+	gap: 1.125rem !important;
+	flex-wrap: wrap;
+}
+.tab {
+	background: linear-gradient(
+		111.61deg,
+		#ffffff 15.17%,
+		#f9f9f9 55.5%,
+		#fafafa 95.84%
+	);
+	backdrop-filter: blur(13px);
+	box-shadow: 0px 0px 12px 0px #0f0a191a;
+}
 .hero__ai {
 	background: -webkit-linear-gradient(
 		221.92deg,
@@ -17,7 +31,7 @@
 	-webkit-text-fill-color: transparent;
 }
 .hero {
-	/* background-image: url("../public/Gradient\ Group.webp"); */
+	background-image: url("../public/Gradient\ Group.webp");
 	z-index: -1;
 }
 .feature {

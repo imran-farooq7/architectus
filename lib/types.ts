@@ -20,3 +20,12 @@ export interface InsightsProps {
 	title: string;
 	statement: string;
 }
+export interface ReviewProps {
+	id: number;
+	rating: number;
+	content: string;
+	date: string;
+	datetime: string;
+	author: string;
+	avatarSrc: string;
+}
