@@ -4,6 +4,7 @@ import WorkoutTabCard from "./WorkoutTabCard";
 import Img1 from "@/public/wot1.png";
 import Img2 from "@/public/wot2.png";
 import Img3 from "@/public/image 11.svg";
+import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 
 const WorkoutTab = () => {
 	return (
@@ -29,11 +30,12 @@ const WorkoutTab = () => {
 					Create
 				</button>
 			</div>
-			<div className="flex flex-wrap justify-center lg:justify-start gap-8 items-center">
+			<div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-8 items-center">
 				<WorkoutTabCard title="1° Month" image={Img1} />
 				<WorkoutTabCard title="2° Month" image={Img2} />
 				<WorkoutTabCard title="3° Month" image={Img3} />
 			</div>
+			<ButtonsGroup />
 		</div>
 	);
 };

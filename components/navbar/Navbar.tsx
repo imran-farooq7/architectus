@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/logonew.png";
 import { links } from "@/lib/constants";
 import NavLink from "./NavLink";
 import { useState } from "react";
@@ -30,17 +30,13 @@ const Navbar = () => {
 							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="hidden lg:flex lg:gap-x-12">
-						{links.map((link) => (
-							<NavLink href={link.href} text={link.text} key={link.href} />
-						))}
-					</div>
+
 					<div className="hidden lg:flex lg:flex-1 lg:justify-end">
 						<Link
 							href={"/contact"}
-							className="hidden lg:inline-flex px-9 py-[7px] rounded-[10px] border-[2px] border-[#3D2278] font-medium bg-transparent text-[#3D2278]"
+							className="lg:inline-flex px-8 py-[14px] rounded-[10px] bg-[#3D2278] font-medium text-white"
 						>
-							Contact Us
+							Contact
 						</Link>
 					</div>
 				</nav>

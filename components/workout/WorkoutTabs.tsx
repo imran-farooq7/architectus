@@ -1,7 +1,9 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import BodyTab from "./BodyTab";
-import WorkoutTab from "./WorkoutTab";
-import Link from "next/link";
+import BodyTab from "./body/BodyTab";
+import MaterialsTab from "./materials tab/MaterialsTab";
+import TutorialsTab from "./tutorials tab/TutorialsTab";
+import WorkoutTab from "./workout tab/WorkoutTab";
+import SuppliersTab from "./suppliers/SuppliersTab";
 
 const WorkoutTabs = () => {
 	return (
@@ -14,6 +16,7 @@ const WorkoutTabs = () => {
 				>
 					Body
 				</Tab>
+
 				<Tab
 					className={
 						"tab py-3 w-36 rounded-[30px] data-[selected]:border-[#3D2278] data-[selected]:border-[2px] data-[selected]:text-[#3D2278] text-base font-medium data-[selected]:font-semibold data-[selected]:focus:outline-none"
@@ -21,15 +24,15 @@ const WorkoutTabs = () => {
 				>
 					Workout
 				</Tab>
-				<Link href={"/aitools/workout?tab=material"}>
-					<Tab
-						className={
-							"tab py-3 w-36 rounded-[30px] data-[selected]:border-[#3D2278] data-[selected]:border-[2px] data-[selected]:text-[#3D2278] text-base font-medium data-[selected]:font-semibold data-[selected]:focus:outline-none"
-						}
-					>
-						Materials
-					</Tab>
-				</Link>
+
+				<Tab
+					className={
+						"tab py-3 w-36 rounded-[30px] data-[selected]:border-[#3D2278] data-[selected]:border-[2px] data-[selected]:text-[#3D2278] text-base font-medium data-[selected]:font-semibold data-[selected]:focus:outline-none"
+					}
+				>
+					Materials
+				</Tab>
+
 				<Tab
 					className={
 						"tab py-3 w-36 rounded-[30px] data-[selected]:border-[#3D2278] data-[selected]:border-[2px] data-[selected]:text-[#3D2278] text-base font-medium data-[selected]:font-semibold data-[selected]:focus:outline-none"
@@ -52,7 +55,15 @@ const WorkoutTabs = () => {
 				<TabPanel>
 					<WorkoutTab />
 				</TabPanel>
-				<TabPanel>Content 3</TabPanel>
+				<TabPanel>
+					<MaterialsTab />
+				</TabPanel>
+				<TabPanel>
+					<TutorialsTab />
+				</TabPanel>
+				<TabPanel>
+					<SuppliersTab />
+				</TabPanel>
 			</TabPanels>
 		</TabGroup>
 	);

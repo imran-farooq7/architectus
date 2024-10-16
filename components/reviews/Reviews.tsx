@@ -2,17 +2,19 @@
 import { reviews } from "@/lib/constants";
 import Review from "./Review";
 import { RatingStar } from "react-ts-rating-star";
+import Image from "next/image";
+import BG from "@/public/bg review.png";
 
 const Reviews = () => {
 	return (
-		<div className=" py-10 relative px-10 lg:px-28 xl:px-32 mt-20">
+		<div className="py-10 relative px-10 lg:px-28 xl:px-32 mt-20">
 			<h1 className="text-base  md:text-[32px] font-semibold leading-8">
 				Reviews
 			</h1>
 			<p className="text-base font-normal leading-6 my-8 text-[#0F0A19]">
 				Total Reviews <span className="font-semibold">(160)</span>
 			</p>
-			<div className="flex gap-x-28 gap-y-8 flex-col lg:flex-row">
+			<div className="flex gap-x-28 gap-y-8 flex-col lg:flex-row pb-24">
 				<div>
 					<div>
 						<div className="-my-10">
@@ -22,7 +24,8 @@ const Reviews = () => {
 						</div>
 					</div>
 				</div>
-				<div className="bg-white shadow-2xl rounded-3xl p-8">
+				<div className="reviewbg rounded-3xl p-8">
+					{/* <Image fill src={BG} alt="bg" /> */}
 					<h1 className="text-base  md:text-[32px] font-semibold leading-8">
 						Add Rating & Review
 					</h1>

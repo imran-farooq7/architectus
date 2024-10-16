@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Workout from "@/public/workout.png";
+import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 
 const BodyTab = () => {
 	return (
@@ -17,6 +18,7 @@ const BodyTab = () => {
 				</button>
 			</div>
 			<Image src={Workout} alt="workout" />
+			<ButtonsGroup />
 		</div>
 	);
 };

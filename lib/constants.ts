@@ -157,3 +157,58 @@ export const reviews = [
 	},
 	// More reviews...
 ];
+export const materialsFaqs = [
+	{
+		question: "Concrete",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Rubber",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Leather",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+
+	{
+		question: "Canvas",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Aluminium",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Cement",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Binding Wire",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Cork",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+
+	{
+		question: "Mycelium",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Precast Concrete",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	// More questions...
+];

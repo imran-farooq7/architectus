@@ -3,14 +3,22 @@ import Reviews from "@/components/reviews/Reviews";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 import Workout from "@/components/workout/Workout";
 import Image from "next/image";
-import BG from "@/public/Gradient Group.webp";
+import BG from "@/public/bg review.png";
+import Button from "@/components/shared ui/Button";
+import MaterialsFaqs from "@/components/workout/materials tab/MaterialsFaqs";
 
 interface Props {
+	searchParams: {
+		tab: string;
+	};
 	params: {
 		name: string;
 	};
 }
-const AiToolDetailPage = ({ params: { name } }: Props) => {
+const AiToolDetailPage = ({
+	searchParams: { tab },
+	params: { name },
+}: Props) => {
 	let content;
 	if (name === "workout") {
 		content = <Workout />;
@@ -22,11 +30,11 @@ const AiToolDetailPage = ({ params: { name } }: Props) => {
 	return (
 		<div>
 			<Breadcrumbs name={name} />
-			<div className="hero bg-no-repeat bg-center bg-cover">
-				{/* <Image src={BG} alt="bg" className="  object-cover" quality={100} /> */}
+			<div className="workoutbg bg-no-repeat bg-center bg-cover relative">
+				{/* <Image src={BG} alt="bg" fill className="object-cover" quality={100} /> */}
 				{content}
 			</div>
-			<ButtonsGroup />
+
 			<Reviews />
 		</div>
 	);
