@@ -17,36 +17,36 @@ const HowItWorks = () => {
 					text="Get detailed insights about your body metrics and composition for personalized workout plans."
 					title="Body Scan"
 					step={1}
-					imgOrder="1"
-					textOrder="2"
-					stepOrder="3"
+					imgOrder="order-1"
+					textOrder="order-2"
+					stepOrder="order-3"
 				/>
 				<Steps
 					img={Hw2}
 					text="Tailored fitness routines designed to meet your specific goals and preferences."
 					title="Customised Workout Plans"
 					step={2}
-					imgOrder="3"
-					textOrder="1"
-					stepOrder="2"
+					imgOrder="order-3"
+					textOrder="order-1"
+					stepOrder="order-2"
 				/>
 				<Steps
 					img={Hw3}
 					text="Step-by-step audio instructions to guide you through your workouts."
 					title="Guided Voice Narration"
 					step={3}
-					imgOrder="1"
-					textOrder="2"
-					stepOrder="3"
+					imgOrder="order-1"
+					textOrder="order-2"
+					stepOrder="order-3"
 				/>
 				<Steps
 					img={Hw4}
 					text="Enjoy full access to premium features tools and resources completely free no hidden costs."
 					title="Completely Free"
 					step={4}
-					imgOrder="3"
-					textOrder="1"
-					stepOrder="2"
+					imgOrder="order-3"
+					textOrder="order-1"
+					stepOrder="order-2"
 				/>
 			</div>
 			<div className=" flex lg:hidden flex-col gap-20">
