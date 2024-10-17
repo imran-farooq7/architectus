@@ -1,14 +1,21 @@
 import Image from "next/image";
 import hero from "@/public/hero.svg";
 import Line from "@/public/line.png";
-import BG from "@/public/Gradient Group.webp";
+import BG from "@/public/hero.png";
+import Navbar from "../navbar/Navbar";
+import Logo from "@/public/logo.svg";
 
 const Hero = () => {
 	return (
 		<section
-			className="py-20 relative px-10 lg:px-28 xl:px-32 
+			className="relative
+			flex
+			w-full h-screen	
             "
 		>
+			<header className="absolute w-full">
+				<Navbar logo={Logo} />
+			</header>
 			<Image
 				src={BG}
 				alt="bg"
@@ -16,31 +23,23 @@ const Hero = () => {
 				className="object-cover -z-10"
 				quality={100}
 			/>
-			<div className=" gap-20 lg:gap-40 mx-auto flex flex-col lg:flex-row items-center">
-				<div>
-					<h1 className="max-w-full text-3xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">
-						Innovative{" "}
-						<span className="relative">
-							<span className="hero__ai">A</span>
-							<span className="text-[#3D2278]">I</span>
-							<Image
-								src={Line}
-								alt="ai"
-								className="absolute left-0 top-[35px] md:top-[65px] lg:top-[76px]"
-							/>
-						</span>{" "}
-						Solutions
+			<div className="px-10 lg:px-28 xl:px-32 gap-20 lg:gap-40 mx-auto flex flex-col items-center justify-end pb-12 md:pb-28">
+				<div className="flex flex-col">
+					<h1 className="text-[40px] text-left mb-6 max-w-sm md:max-w-full lg:text-[64px] font-bold text-white md:text-center  leading-[1.2]">
+						Workout{" "}
 					</h1>
-					<p className="text-lg font-normal leading-7 my-8 max-w-xl">
-						Harness the power of AI to optimize processes, drive growth, and
-						unlock new possibilities for your business.
+					<p className="text-lg font-normal leading-7 mb-10 text-left md:text-center text-white">
+						Tools for Body Training
 					</p>
-					<button className="bg-[#3D2278] font-medium text-lg text-white px-[34px] py-3 rounded-xl">
-						Get Start Now
-					</button>
+					<div className="space-x-8">
+						<button className="bg-transparent border border-white text-lg text-white w-32 md:w-40 h-[52px] rounded-[10px]">
+							Scan body
+						</button>
+						<button className="bg-[#3D2278] text-lg text-white w-32 md:w-40 h-[52px] rounded-[10px]">
+							Create
+						</button>
+					</div>
 				</div>
-
-				<Image src={hero} alt="hero" priority />
 			</div>
 		</section>
 	);

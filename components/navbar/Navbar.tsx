@@ -1,26 +1,25 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import Logo from "@/public/logonew.png";
 import { links } from "@/lib/constants";
 import NavLink from "./NavLink";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { Dialog, DialogPanel } from "@headlessui/react";
 
-const Navbar = () => {
+const Navbar = ({ logo }: { logo: StaticImageData }) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
 		<div className="py-6 px-10  md:px-20">
-			<header className=" z-50">
+			<header className="z-50">
 				<nav className="flex items-center justify-between" aria-label="Global">
 					<div className="flex lg:flex-1">
 						<Link href="/">
-							<Image src={Logo} alt="logo" />
+							<Image src={logo} alt="logo" />
 						</Link>
 					</div>
-					<div className="flex lg:hidden">
+					{/* <div className="flex lg:hidden">
 						<button
 							type="button"
 							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -29,18 +28,18 @@ const Navbar = () => {
 							<span className="sr-only">Open main menu</span>
 							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 						</button>
-					</div>
+					</div> */}
 
-					<div className="hidden lg:flex lg:flex-1 lg:justify-end">
+					{/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
 						<Link
 							href={"/contact"}
 							className="lg:inline-flex px-8 py-[14px] rounded-[10px] bg-[#3D2278] font-medium text-white"
 						>
 							Contact
 						</Link>
-					</div>
+					</div> */}
 				</nav>
-				<Dialog
+				{/* <Dialog
 					className="lg:hidden"
 					open={mobileMenuOpen}
 					onClose={setMobileMenuOpen}
@@ -87,7 +86,7 @@ const Navbar = () => {
 							</div>
 						</div>
 					</DialogPanel>
-				</Dialog>
+				</Dialog> */}
 			</header>
 		</div>
 	);

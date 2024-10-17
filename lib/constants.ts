@@ -96,23 +96,55 @@ export const insights = [
 ];
 export const faqs = [
 	{
-		question: "How does the Workout AI create personalized fitness plans?",
+		question: "What types of workouts can I create?",
 		answer:
 			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 	},
 	{
-		question: "Can the Workout AI adjust my plan based on my progress?",
+		question: "Can I customize my workout plan?",
 		answer:
 			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 	},
 	{
-		question: "How does the Clothing AI recommend outfits?",
+		question: "How can I track my progress?",
 		answer:
 			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 	},
-
 	{
-		question: "How does the AI customize smoothie recipes for me?",
+		question: "Is there a mobile app available for workouts?",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Can I share my workout plans with friends?",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	// More questions...
+];
+export const faqsMobile = [
+	{
+		question: "How Workout AI creates plans?",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Can Workout AI adjust progress?",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "How does AI suggest outfits?",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "Can AI provide seasonal guides?",
+		answer:
+			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+	},
+	{
+		question: "AI customizes smoothie recipes?",
 		answer:
 			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
 	},

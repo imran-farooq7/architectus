@@ -1,12 +1,10 @@
-import { links } from "@/lib/constants";
+import FB from "@/public/fb.svg";
 import BgFooter from "@/public/footer background.png";
+import LinkedInn from "@/public/linkedinn.svg";
+import Logo from "@/public/footer.svg";
+import Twitter from "@/public/twitter.svg";
 import Image from "next/image";
 import Link from "next/link";
-import NavLink from "../navbar/NavLink";
-import Logo from "@/public/logonewwhite.png";
-import FB from "@/public/fb.svg";
-import LinkedInn from "@/public/linkedinn.svg";
-import Twitter from "@/public/twitter.svg";
 
 const Footer = () => {
 	return (
