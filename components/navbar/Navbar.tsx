@@ -1,11 +1,8 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { links } from "@/lib/constants";
-import NavLink from "./NavLink";
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
-import { Dialog, DialogPanel } from "@headlessui/react";
+import Logo from "@/public/logomobile.png";
 
 const Navbar = ({ logo }: { logo: StaticImageData }) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,7 +13,8 @@ const Navbar = ({ logo }: { logo: StaticImageData }) => {
 				<nav className="flex items-center justify-between" aria-label="Global">
 					<div className="flex lg:flex-1">
 						<Link href="/">
-							<Image src={logo} alt="logo" />
+							<Image src={logo} alt="logo" className="hidden md:inline-flex" />
+							<Image src={Logo} alt="logo" className="inline-flex md:hidden" />
 						</Link>
 					</div>
 					{/* <div className="flex lg:hidden">
