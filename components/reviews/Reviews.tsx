@@ -9,14 +9,14 @@ import LoadMore from "@/public/loadmore.png";
 const Reviews = () => {
 	return (
 		<div className="relative px-10 lg:px-28 xl:px-32 my-24">
-			<h1 className="text-base  md:text-[32px] font-semibold leading-8">
+			<h1 className="text-base md:text-[32px] font-semibold leading-8">
 				Reviews
 			</h1>
 			<div className="text-base font-normal leading-6 my-8 text-[#0F0A19] flex gap-32 items-center">
 				<div>
 					Total Reviews <span className="font-semibold">(160)</span>
 				</div>
-				<div className="flex items-center flex-col md:flex-row gap-y-4">
+				<div className="flex md:items-center flex-col md:flex-row gap-y-4">
 					<p className="mr-3">Filter By:</p>
 					<div className="flex gap-6 justify-center md:justify-start items-center flex-wrap">
 						<div className="relative">

@@ -14,7 +14,7 @@ const Review = ({ review }: { review: ReviewProps }) => {
 			<div
 				className={classNames(
 					review.id === 1 ? "" : "border-t border-gray-200",
-					"flex-1 py-10"
+					"flex-1 py-6"
 				)}
 			>
 				<h3 className="font-bold leading-5 text-sm text-[#0F0A19]">

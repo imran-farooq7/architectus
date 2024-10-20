@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Line from "@/public/linewrk.png";
 import WorkoutTabCard from "./WorkoutTabCard";
-import Img1 from "@/public/wot1.png";
-import Img2 from "@/public/wot2.png";
+import Img1 from "@/public/image 10.svg";
+import Img2 from "@/public/image 8.svg";
 import Img3 from "@/public/image 11.svg";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 
