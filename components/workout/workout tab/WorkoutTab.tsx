@@ -9,7 +9,7 @@ import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 const WorkoutTab = () => {
 	return (
 		<div>
-			<div className="flex flex-col gap-8 mb-16">
+			<div className="flex flex-col gap-8 my-20">
 				<h1 className="max-w-full text-3xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">
 					Your{" "}
 					<span className="relative">

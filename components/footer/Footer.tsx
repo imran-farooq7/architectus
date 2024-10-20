@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<footer className=" relative py-9 px-10  md:px-20">
+		<footer className=" relative py-9 px-6  md:px-20">
 			<Image
 				src={BgFooter}
 				alt="bg"
@@ -46,7 +46,7 @@ const Footer = () => {
 				</div>
 				<div className="h-[2px] bg-white/[0.06] my-9"></div>
 				<p className="text-white/80 font-normal text-sm text-center">
-					©Innovative AI Solutions for Urban Development. 2024
+					© Innovative AI Solutions for Urban Development. 2024
 				</p>
 			</div>
 		</footer>

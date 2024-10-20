@@ -10,13 +10,12 @@ import Plus from "@/public/plus.svg";
 import Image from "next/image";
 
 const MaterialsFaqs = () => {
+	const parser = new DOMParser();
+
 	return (
-		<div className="lg:px-28 xl:px-32 py-20 px-10">
-			<div
-				className=" max-w-7xl mx-auto 
-"
-			>
-				<dl className="mt-10 ">
+		<div>
+			<div className=" max-w-7xl mx-auto">
+				<dl>
 					{materialsFaqs.map((faq) => (
 						<Disclosure as="div" key={faq.question} className="pt-6">
 							{({ open }) => (
@@ -38,9 +37,10 @@ const MaterialsFaqs = () => {
 											</span>
 										</DisclosureButton>
 										<DisclosurePanel as="dd" className="mt-2 pb-5 px-8">
-											<p className="text-base leading-7 text-gray-600">
-												{faq.answer}
-											</p>
+											<div
+												className="flex gap-8 text-lg items-center max-w-[59rem]"
+												dangerouslySetInnerHTML={{ __html: faq.answer }}
+											/>
 										</DisclosurePanel>
 									</dt>
 								</>

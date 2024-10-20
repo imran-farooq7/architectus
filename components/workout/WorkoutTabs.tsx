@@ -48,7 +48,7 @@ const WorkoutTabs = () => {
 					Suppliers
 				</Tab>
 			</TabList>
-			<TabPanels className="mt-20">
+			<TabPanels>
 				<TabPanel>
 					<BodyTab />
 				</TabPanel>
