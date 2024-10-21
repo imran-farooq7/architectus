@@ -3,13 +3,16 @@ import Image from "next/image";
 import Input from "./Input";
 const UploadSupplierForm = () => {
 	return (
-		<div className="flex flex-col bg-white rounded-2xl p-8 max-w-full ">
+		<div className="flex flex-col mx-4 bg-white rounded-2xl p-8 max-w-full ">
 			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">Upload</h1>
 			<p className="mt-4 text-[#6D6D6D] text-left text-sm">
 				Add your documents here, and you can upload up to 5 files max
 			</p>
 			<div className="relative mt-8 mb-[14px]">
-				<div className="w-[540px] relative borderUpload py-10" id="dropzone">
+				<div
+					className="max-w-full  md:w-[540px] relative borderUpload py-10"
+					id="dropzone"
+				>
 					<input
 						type="file"
 						className="absolute inset-0 w-full h-full opacity-0 z-50"

@@ -3,7 +3,7 @@ import Mic from "@/public/mic.png";
 
 const CreateCard = () => {
 	return (
-		<div className="flex flex-col bg-white rounded-2xl p-8 max-w-full">
+		<div className="flex flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">
 			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">Create</h1>
 			<p className="mt-4  text-[#6D6D6D] text-left text-sm">
 				Lorem ipsum dolor sit amet consectetur adipiscing elit Vivamus.
