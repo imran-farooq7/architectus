@@ -10,7 +10,7 @@ const UploadSupplierForm = () => {
 			</p>
 			<div className="relative mt-8 mb-[14px]">
 				<div
-					className="max-w-full  md:w-[540px] relative borderUpload py-10"
+					className="max-w-full  md:max-w-[540px] relative borderUpload py-10"
 					id="dropzone"
 				>
 					<input

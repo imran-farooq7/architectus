@@ -22,7 +22,7 @@ const Reviews = () => {
 						<div className="relative">
 							<select
 								defaultValue="All Ratings"
-								className="py-3 pl-5 pr-12 rounded-[10px] w-[180px] h-12  text-[#0F0A19]/80 border border-black/[0.12]"
+								className="py-3 pl-5 pr-6 md:pr-12 rounded-[10px] w-36 md:w-[180px] h-12  text-[#0F0A19]/80 border border-black/[0.12]"
 							>
 								<option>All Ratings</option>
 							</select>
