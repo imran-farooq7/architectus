@@ -30,7 +30,7 @@ const WorkoutTabs = () => {
 						"tab py-3 px-10 w-full md:w-40 rounded-[30px] data-[selected]:border-[#3D2278] data-[selected]:border-[2px] data-[selected]:text-[#3D2278] text-base font-medium data-[selected]:font-semibold data-[selected]:focus:outline-none"
 					}
 				>
-					Materials
+					Coaches
 				</Tab>
 
 				<Tab

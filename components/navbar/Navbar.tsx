@@ -2,7 +2,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "@/public/logomobile.png";
+import Logo from "@/public/logomobile.svg";
 
 const Navbar = ({ logo }: { logo: StaticImageData }) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -8,7 +8,7 @@ const MaterialsTab = () => {
 		<div className="flex flex-col">
 			<div className="my-14 md:my-20">
 				<h1 className="max-w-full text-4xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">
-					Materials{" "}
+					Coaches{" "}
 					<span className="relative">
 						<span className="text-[#3D2278]">List</span>
 						<Image

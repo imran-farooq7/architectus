@@ -12,6 +12,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SupplierCard from "./SupplierCard";
 import UploadSupplierForm from "./UploadSupplierForm";
+import Carousel from "@/components/insights/Carousel";
 
 const SuppliersTab = () => {
 	const [open, setOpen] = useState(false);
@@ -362,7 +363,7 @@ const SuppliersTab = () => {
 					</div>
 				</div>
 			</div>
-			<div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8">
+			{/* <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8">
 				<SupplierCard image={Skan} />
 				<SupplierCard image={Ncc} />
 				<SupplierCard image={Stra} />
@@ -375,7 +376,8 @@ const SuppliersTab = () => {
 				>
 					<Image src={Plus} alt="add" />
 				</button>
-			</div>
+			</div> */}
+			<Carousel />
 			<Modal open={open} setOpen={setOpen}>
 				<UploadSupplierForm setOpen={setOpen} />
 			</Modal>

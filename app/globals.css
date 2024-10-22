@@ -84,13 +84,14 @@
 	padding: 25px;
 	max-width: 360px;
 }
-.slick-list {
-	padding: 0 50px 60px 0 !important;
-}
+/* .slick-list {
+	padding: 0 0px 45px 0 !important;
+} */
 
 .slick-dots {
-	display: flex !important
-	;
+	display: flex !important;
+	padding-top: 3.5rem !important;
+	position: static !important;
 }
 
 .slick-slide:not(.slick-active) {
@@ -126,9 +127,17 @@
 }
 .slick-slide > div {
 	margin-inline: 10px;
+	margin-block: 10px;
 }
 select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
+}
+@media (max-width: 480px) {
+	.slick-dots {
+		display: flex !important;
+		justify-content: center;
+		padding-bottom: 2rem;
+	}
 }
