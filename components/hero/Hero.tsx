@@ -1,5 +1,5 @@
 import BG from "@/public/hero.gif";
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/logowhite.svg";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../navbar/Navbar";
@@ -14,7 +14,7 @@ const Hero = () => {
             "
 		>
 			<header className="absolute w-full">
-				<Navbar logo={Logo} />
+				<Navbar logo={Logo} isLandingPage />
 			</header>
 			<Image
 				src={BG}

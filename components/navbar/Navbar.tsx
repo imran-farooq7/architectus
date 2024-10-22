@@ -3,8 +3,15 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "@/public/logomobile.svg";
+import LogoWhite from "@/public/logowhite.svg";
 
-const Navbar = ({ logo }: { logo: StaticImageData }) => {
+const Navbar = ({
+	logo,
+	isLandingPage,
+}: {
+	logo: StaticImageData;
+	isLandingPage?: boolean;
+}) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
@@ -14,7 +21,11 @@ const Navbar = ({ logo }: { logo: StaticImageData }) => {
 					<div className="flex lg:flex-1">
 						<Link href="/">
 							<Image src={logo} alt="logo" className="hidden md:inline-flex" />
-							<Image src={Logo} alt="logo" className="inline-flex md:hidden" />
+							<Image
+								src={isLandingPage ? LogoWhite : Logo}
+								alt="logo"
+								className="inline-flex md:hidden"
+							/>
 						</Link>
 					</div>
 					{/* <div className="flex lg:hidden">
