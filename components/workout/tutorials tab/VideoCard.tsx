@@ -28,7 +28,7 @@ const VideoCard = ({
 			</div>
 			<div className="p-7">
 				<h3 className="text-xl font-bold pb-3 text-[#0F0A19]">{title}</h3>
-				<p className="font-medium text-base leading-6 text-[#858585] pb-5">
+				<p className="font-medium text-sm md:text-base leading-6 text-[#858585] pb-5">
 					Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras feugiat
 					quam ex sit amet rhoncus sapien non Mauris tincidunt nibh at
 					euismodconsectetur adipiscing elit.

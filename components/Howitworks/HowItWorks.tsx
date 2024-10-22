@@ -49,7 +49,7 @@ const HowItWorks = () => {
 					stepOrder="order-2"
 				/>
 			</div>
-			<div className=" flex lg:hidden flex-col gap-20">
+			<div className=" flex lg:hidden flex-col gap-8">
 				<StepsMobile
 					img={Hw1}
 					text="Get detailed insights about your body metrics and composition for personalized workout plans."

@@ -193,54 +193,54 @@ export const materialsFaqs = [
 	{
 		question: "Concrete",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Rubber",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Leather",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 
 	{
 		question: "Canvas",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Aluminium",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Cement",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Binding Wire",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Cork",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 
 	{
 		question: "Mycelium",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	{
 		question: "Precast Concrete",
 		answer:
-			'<img src="./concrete.png" alt="conrete" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
+			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 	},
 	// More questions...
 ];

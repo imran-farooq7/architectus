@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Workout from "@/public/workout.png";
+import WorkoutMobile from "@/public/bodymobile.png";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 import { useState } from "react";
 import Modal from "@/components/shared ui/Modal";
@@ -11,25 +12,26 @@ const BodyTab = () => {
 
 	return (
 		<div>
-			<div className="flex flex-col gap-8 my-20">
+			<div className="flex flex-col gap-6 md:gap-8 my-14 md:my-20">
 				<h1 className="text-4xl md:text-[64px] font-bold text-[#0F0A19]">
 					Visualization
 				</h1>
-				<p className="text-base md:text-lg font-normal leading-[26px] max-w-[34rem]">
-					Envision your new body with precision!Specify Which Parts You Want to
+				<p className="text-sm md:text-lg font-normal leading-[26px] max-w-[20rem] md:max-w-[34rem]">
+					Envision your new body with precision! Specify Which Parts You Want to
 					Improve, Shape, and Size.
 				</p>
 				<button
 					onClick={() => setOpen(true)}
-					className="bg-[#3D2278] self-start font-medium text-lg text-white px-[4.35rem] py-3 rounded-xl"
+					className="bg-[#3D2278] self-start font-medium text-lg text-white px-10 md:px-[4.35rem] py-3 rounded-xl"
 				>
 					Create
 				</button>
 			</div>
-			<Image src={Workout} alt="workout" />
+			<Image src={Workout} alt="workout" className="hidden md:block" />
+			<Image src={WorkoutMobile} alt="workout" className="block md:hidden" />
 			<ButtonsGroup />
 			<Modal open={open} setOpen={setOpen}>
-				<CreateCard />{" "}
+				<CreateCard setOpen={setOpen} />{" "}
 			</Modal>
 		</div>
 	);

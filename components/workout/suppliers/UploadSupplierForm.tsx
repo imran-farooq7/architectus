@@ -1,13 +1,26 @@
 import Upload from "@/public/upload.png";
 import Image from "next/image";
 import Input from "./Input";
-const UploadSupplierForm = () => {
+import Cross from "@/public/close.png";
+import { Dispatch, SetStateAction } from "react";
+
+const UploadSupplierForm = ({
+	setOpen,
+}: {
+	setOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
 	return (
-		<div className="flex flex-col mx-4 bg-white rounded-2xl p-8 max-w-full ">
+		<div className="flex relative flex-col mx-4 bg-white rounded-2xl p-8 max-w-full ">
 			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">Upload</h1>
 			<p className="mt-4 text-[#6D6D6D] text-left text-sm">
 				Add your documents here, and you can upload up to 5 files max
 			</p>
+			<Image
+				src={Cross}
+				alt="close"
+				onClick={() => setOpen(false)}
+				className="top-[30px] right-[30px] absolute cursor-pointer"
+			/>
 			<div className="relative mt-8 mb-[14px]">
 				<div
 					className="max-w-full  md:max-w-[540px] relative borderUpload py-10"
@@ -35,7 +48,7 @@ const UploadSupplierForm = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex justify-between mb-8">
+			<div className="flex flex-col md:flex-row justify-between mb-8">
 				<p className="text-sm text-[#6D6D6D]">Maximum Size: 280 × 90 px</p>
 				<p className="text-sm text-[#6D6D6D]">
 					white or transparent background
@@ -48,9 +61,17 @@ const UploadSupplierForm = () => {
 				<Input type="text" placeHolder="Enter Your Fiscal Number" />
 			</div>
 
-			<button className="bg-[#3D2278]  text-white w-full h-[52px] rounded-[10px] ">
-				Submit Request
-			</button>
+			<div className="gap-5 flex flex-col items-center gap-y-5">
+				<button
+					onClick={() => setOpen(false)}
+					className="bg-transparent order-2 border border-[#3D2278] md:text-lg text-[#3D2278]  w-full h-[52px] rounded-[10px] hover:bg-[#3D2278] hover:border-none hover:text-white hover:scale-105 transition-all ease-in-out text-sm"
+				>
+					Cancel
+				</button>
+				<button className="bg-[#3D2278] order-1 md:text-lg text-white w-full h-[52px] rounded-[10px] text-sm">
+					Submit Request
+				</button>
+			</div>
 		</div>
 	);
 };

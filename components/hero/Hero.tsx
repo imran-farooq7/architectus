@@ -40,7 +40,7 @@ const Hero = () => {
 					</p>
 					<div className="space-x-8">
 						<button className="bg-transparent border border-white md:text-lg text-white w-32 md:w-40 h-[52px] rounded-[10px] hover:bg-[#3D2278] hover:border-none hover:scale-105 transition-all ease-in-out text-sm">
-							Scan body
+							Scan Body
 						</button>
 						<button className="bg-[#3D2278] md:text-lg text-white w-32 md:w-40 h-[52px] rounded-[10px] text-sm">
 							<Link href="/workout">Create</Link>

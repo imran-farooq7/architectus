@@ -8,7 +8,7 @@ function classNames(...classes: string[]) {
 const Review = ({ review }: { review: ReviewProps }) => {
 	return (
 		<div key={review.id} className="flex space-x-4 text-sm text-gray-500">
-			<div className="flex-none py-10">
+			<div className="flex-none pt-[1.4rem]">
 				<img src={review.avatarSrc} alt="" className="h-12 w-12 rounded-full" />
 			</div>
 			<div

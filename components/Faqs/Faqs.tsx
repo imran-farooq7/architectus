@@ -25,7 +25,7 @@ export default function Faqs() {
 							{({ open }) => (
 								<>
 									<dt className="faqs rounded-[18px]">
-										<DisclosureButton className="flex w-full items-start justify-between py-5 px-8 text-left  text-base ">
+										<DisclosureButton className="flex w-full  justify-between py-5 px-[30px] text-left  text-base ">
 											<span className="text-base font-medium text-[#0F0A19] ">
 												{faq.question}
 											</span>
