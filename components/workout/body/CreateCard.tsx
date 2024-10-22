@@ -2,12 +2,22 @@ import Image from "next/image";
 import Mic from "@/public/mic.png";
 import { Dispatch, SetStateAction } from "react";
 import Cross from "@/public/close.png";
+import "regenerator-runtime/runtime";
+import SpeechRecognition, {
+	useSpeechRecognition,
+} from "react-speech-recognition";
+import Recording from "@/public/recording.png";
 
 const CreateCard = ({
 	setOpen,
 }: {
 	setOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
+	const { listening, transcript, browserSupportsSpeechRecognition } =
+		useSpeechRecognition();
+	if (!browserSupportsSpeechRecognition) {
+		return <h1>Browser doest not support speech</h1>;
+	}
 	return (
 		<div className="flex relative flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">
 			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">Create</h1>
@@ -24,10 +34,28 @@ const CreateCard = ({
 				<textarea
 					placeholder="Type"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 pt-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA] h-36"
+					value={transcript}
 				/>
-				<button className="absolute bottom-4 right-4">
-					<Image src={Mic} alt="mic" width={32} height={32} />
-				</button>
+				{listening ? (
+					<button
+						className="absolute bottom-4 right-4"
+						onClick={() => SpeechRecognition.stopListening()}
+					>
+						<Image src={Recording} alt="mic" width={32} height={32} />
+					</button>
+				) : (
+					<button
+						className="absolute bottom-4 right-4"
+						onClick={() =>
+							SpeechRecognition.startListening({
+								continuous: true,
+								language: "en-US",
+							})
+						}
+					>
+						<Image src={Mic} alt="mic" width={32} height={32} />
+					</button>
+				)}
 			</div>
 			<div className="gap-5 flex flex-col items-center gap-y-5">
 				<button
