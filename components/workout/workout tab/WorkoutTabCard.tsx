@@ -11,7 +11,7 @@ const WorkoutTabCard = ({
 		<div className="bg-white rounded-[20px] overflow-hidden shadow-lg max-w-full mb-12">
 			<div className="relative">
 				<Image
-					className="w-full object-cover"
+					className="w-full object-cover h-[307px] md:h-full"
 					src={image}
 					alt="Product Image"
 				/>

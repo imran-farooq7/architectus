@@ -1,10 +1,16 @@
+"use client";
+import Reviews from "@/components/reviews/Reviews";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
-import Img1 from "@/public/wot.svg";
 import Line from "@/public/linewrk.png";
+import Img1 from "@/public/wot.svg";
 import Image from "next/image";
 import WorkoutTabCard from "./WorkoutTabCard";
+import Modal from "@/components/shared ui/Modal";
+import CreateCard from "../body/CreateCard";
+import { useState } from "react";
 
 const WorkoutTab = () => {
+	const [open, setOpen] = useState(false);
 	return (
 		<div>
 			<div className="flex flex-col gap-6 md:gap-8 my-14 md:my-20">
@@ -24,7 +30,10 @@ const WorkoutTab = () => {
 					possible: What type of training suits your goals, aesthetics,
 					bodybuilding or something else? Let's start today!
 				</p>
-				<button className="bg-[#3D2278] self-start font-medium text-lg text-white px-10 md:px-[4.35rem] py-3 rounded-xl">
+				<button
+					onClick={() => setOpen(true)}
+					className="bg-[#3D2278] self-start font-medium text-lg text-white px-10 md:px-[4.35rem] py-3 rounded-xl"
+				>
 					Create
 				</button>
 			</div>
@@ -32,6 +41,10 @@ const WorkoutTab = () => {
 			<WorkoutTabCard title="90 Days Workout Plan" image={Img1} />
 
 			<ButtonsGroup />
+			<Reviews isCoach={false} />
+			<Modal open={open} setOpen={setOpen}>
+				<CreateCard setOpen={setOpen} />
+			</Modal>
 		</div>
 	);
 };

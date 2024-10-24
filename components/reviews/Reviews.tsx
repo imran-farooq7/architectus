@@ -6,9 +6,9 @@ import Review from "./Review";
 import Down from "@/public/down.png";
 import LoadMore from "@/public/loadmore.png";
 
-const Reviews = () => {
+const Reviews = ({ isCoach }: { isCoach: boolean }) => {
 	return (
-		<div className="relative px-6 lg:px-28 xl:px-32 md:my-20 my-10">
+		<div className={`relative px-0 ${isCoach ? "mt-8" : "md:my-20 my-10"}`}>
 			{/* <div className="flex flex-col md:flex-row items-start md:items-center max-w-[600px] mb-9 justify-between">
 				<h1 className="text-xl md:text-[32px] font-semibold leading-8">
 					Reviews (160)
@@ -35,7 +35,11 @@ const Reviews = () => {
 								<h1 className="text-xl md:text-[32px] font-semibold leading-8">
 									Reviews (160)
 								</h1>
-								<div className="relative my-8 md:my-0 w-full md:w-[180px]">
+								<div
+									className={`relative ${
+										isCoach ? "hidden" : "inline-flex"
+									} my-8 md:my-0 w-full md:w-[180px]`}
+								>
 									<select
 										defaultValue="All Ratings"
 										className="py-3 pl-5 pr-6 md:pr-12 rounded-[10px] w-full md:w-[180px] h-12  text-[#0F0A19]/80 border border-black/[0.12]"

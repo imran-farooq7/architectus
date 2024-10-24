@@ -7,7 +7,7 @@ const SearchBar = () => {
 		<div className="mb-7 md:mb-12">
 			<div className="relative mb-5">
 				<input
-					placeholder="Search coach"
+					placeholder="Search by training type"
 					type="text"
 					className="rounded-[10px]  placeholder:text-[#0F0A19]/60 border py-3 pl-12 border-black/10 w-full md:max-w-[570px]"
 				/>

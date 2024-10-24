@@ -32,17 +32,28 @@ const MaterialsTab = () => {
 					the list of Coaches needed to start your journey without excuses.
 				</p>
 				<div className="flex mt-10 gap-5 flex-col md:flex-row">
-					<button className="bg-[#3D2278] font-medium text-lg text-white px-10 md:px-[3.3rem] py-3 rounded-xl">
+					<button
+						onClick={() => {
+							setCurrentAuth("signup");
+							setOpen(true);
+						}}
+						className="bg-[#3D2278] font-medium text-lg text-white px-10 md:px-[3.3rem] py-3 rounded-xl"
+					>
 						I'm a Coach
 					</button>
-					<button onClick={() => setOpen(true)}>
+					<button
+						onClick={() => {
+							setCurrentAuth("login");
+							setOpen(true);
+						}}
+					>
 						<Button text="Login" />
 					</button>
 				</div>
 			</div>
 			<SearchBar />
 			<MaterialsFaqs />
-			<div className="flex justify-center mt-8 md:mt-[60px]">
+			<div className="flex justify-center my-8 md:my-[60px]">
 				<Button text="Download" />
 			</div>
 			<Modal open={open} setOpen={setOpen}>

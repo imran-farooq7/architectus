@@ -16,6 +16,7 @@ import Carousel from "@/components/shared ui/Carousel";
 import Button from "@/components/shared ui/Button";
 import SupplierAuthCard from "./SupplierAuthCard";
 import SearchBar from "@/components/shared ui/SearchBar";
+import Reviews from "@/components/reviews/Reviews";
 
 const SuppliersTab = () => {
 	const [open, setOpen] = useState(false);
@@ -54,6 +55,7 @@ const SuppliersTab = () => {
 				<SupplierCard image={Zcr} />
 				<SupplierCard image={Zublin} />
 			</Carousel>
+			<Reviews isCoach={false} />
 			<Modal open={open} setOpen={setOpen}>
 				<SupplierAuthCard
 					currentAuth={currentAuth}

@@ -6,6 +6,7 @@ import Video1 from "@/public/video1.png";
 import { useState } from "react";
 import Button from "@/components/shared ui/Button";
 import SearchBar from "@/components/shared ui/SearchBar";
+import Reviews from "@/components/reviews/Reviews";
 
 const TutorialsTab = () => {
 	const [checked, setChecked] = useState(false);
@@ -45,6 +46,7 @@ const TutorialsTab = () => {
 			<div className="flex justify-center mt-8 md:mt-[60px]">
 				<Button text="Download" disabled={!checked} />
 			</div>
+			<Reviews isCoach={false} />
 		</div>
 	);
 };

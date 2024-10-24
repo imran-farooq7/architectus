@@ -1,9 +1,6 @@
-import Image from "next/image";
-import LineLeft from "@/public/Line left.png";
-import { Dispatch, SetStateAction } from "react";
 import Cross from "@/public/close.png";
-import Google from "@/public/Google.svg";
-import Apple from "@/public/apple.svg";
+import Image from "next/image";
+import { Dispatch, SetStateAction } from "react";
 
 const SignupForm = ({
 	setOpen,
@@ -64,7 +61,9 @@ const SignupForm = ({
 				Already have an account ?{" "}
 				<span
 					className="text-sm cursor-pointer font-semibold text-[#3D2278]"
-					onClick={() => setCurrentAuth("login")}
+					onClick={() => {
+						setCurrentAuth("login");
+					}}
 				>
 					Login
 				</span>

@@ -6,6 +6,7 @@ import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 import { useState } from "react";
 import Modal from "@/components/shared ui/Modal";
 import CreateCard from "./CreateCard";
+import Reviews from "@/components/reviews/Reviews";
 
 const BodyTab = () => {
 	const [open, setOpen] = useState(false);
@@ -34,6 +35,8 @@ const BodyTab = () => {
 				className="block md:hidden mb-8"
 			/>
 			<ButtonsGroup />
+			<Reviews isCoach={false} />
+
 			<Modal open={open} setOpen={setOpen}>
 				<CreateCard setOpen={setOpen} />{" "}
 			</Modal>

@@ -12,8 +12,6 @@ const WorkoutDetailsPage = () => {
 				{/* <Image src={BG} alt="bg" fill className="object-cover" quality={100} /> */}
 				<Workout />
 			</div>
-
-			<Reviews />
 		</div>
 	);
 };

@@ -7,10 +7,14 @@ const CoachesAuthCard = ({
 	setOpen,
 	currentAuth,
 	setCurrentAuth,
+	isCoach,
+	setIsCoach,
 }: {
 	setOpen: Dispatch<SetStateAction<boolean>>;
 	currentAuth: string;
 	setCurrentAuth: Dispatch<SetStateAction<string>>;
+	isCoach?: boolean;
+	setIsCoach?: Dispatch<SetStateAction<boolean>>;
 }) => {
 	let content;
 	if (currentAuth === "login") {
@@ -23,13 +27,14 @@ const CoachesAuthCard = ({
 			/>
 		);
 	}
-	if (currentAuth === "signup") {
+	if (currentAuth === "signup" || (isCoach && currentAuth !== "login")) {
 		content = (
 			<SignupForm
 				setOpen={setOpen}
 				title="Coach"
 				description="Manage products, track orders, and connect with buyers."
 				setCurrentAuth={setCurrentAuth}
+				setIsCoach={setIsCoach!}
 			/>
 		);
 	}
