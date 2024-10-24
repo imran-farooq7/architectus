@@ -14,7 +14,7 @@ const WorkoutDetailsPage = () => {
 				<Workout />
 			</div>
 
-			<Reviews />
+			{/* <Reviews /> */}
 		</div>
 	);
 };

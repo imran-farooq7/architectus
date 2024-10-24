@@ -202,11 +202,13 @@ export const coaches = [
 		question: "<img src='./c2.svg' /> <p>Jessica</p>",
 		bio: 'Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).',
 		trainingTypes: ["Cross Fit", "Boxing", "Circut"],
+		languages: ["English", "Spanish"],
 	},
 	{
 		question: "<img src='./c3.svg' /> <p>Marry Jordan</p>",
 		bio: 'Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).',
 		trainingTypes: ["Strenght", "Boxing"],
+		languages: ["English", "French"],
 	},
 
 	{
@@ -214,24 +216,28 @@ export const coaches = [
 		answer:
 			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 		trainingTypes: ["Cross Fit", "Boxing"],
+		languages: ["Punjabi", "Italian"],
 	},
 	{
 		question: "<img src='./c5.svg' /> <p>Dan Abranov</p>",
 		answer:
 			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 		trainingTypes: ["Cross Fit", "Boxing", "Circut"],
+		languages: ["English"],
 	},
 	{
 		question: "<img src='./c6.svg' /> <p>Colt Steele</p>",
 		answer:
 			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 		trainingTypes: ["Strenght", "Boxing"],
+		languages: ["Chinese"],
 	},
 	{
 		question: "<img src='./c7.svg' /> <p>Stephen Grider</p>",
 		answer:
 			'<img src="./concrete.png" alt="conrete" class="hidden md:inline-flex" /> <span">Concrete is an artificial composite material, comprising a matrix of cementitious binder (typically Portland cement paste or asphalt) and a dispersed phase or "filler" of aggregate (typically a rocky material, loose stones, and sand).</span>',
 		trainingTypes: ["Cross Fit", "Boxing"],
+		languages: ["Turkish"],
 	},
 
 	// More questions...
