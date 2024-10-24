@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import React from "react";
 
 const WorkoutTabCard = ({
 	image,
@@ -9,7 +8,7 @@ const WorkoutTabCard = ({
 	title: string;
 }) => {
 	return (
-		<div className="bg-white rounded-[20px] overflow-hidden shadow-lg max-w-[373px]">
+		<div className="bg-white rounded-[20px] overflow-hidden shadow-lg max-w-full mb-12">
 			<div className="relative">
 				<Image
 					className="w-full object-cover"

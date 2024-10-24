@@ -1,11 +1,8 @@
-import Image from "next/image";
-import Line from "@/public/linewrk.png";
-import WorkoutTabCard from "./WorkoutTabCard";
-import Img1 from "@/public/image 10.svg";
-import Img2 from "@/public/image 8.svg";
-import Img3 from "@/public/image 11.svg";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
-import Carousel from "@/components/shared ui/Carousel";
+import Img1 from "@/public/wot.svg";
+import Line from "@/public/linewrk.png";
+import Image from "next/image";
+import WorkoutTabCard from "./WorkoutTabCard";
 
 const WorkoutTab = () => {
 	return (
@@ -31,11 +28,9 @@ const WorkoutTab = () => {
 					Create
 				</button>
 			</div>
-			<Carousel slides={3}>
-				<WorkoutTabCard title="1° Month" image={Img1} />
-				<WorkoutTabCard title="2° Month" image={Img2} />
-				<WorkoutTabCard title="3° Month" image={Img3} />
-			</Carousel>
+
+			<WorkoutTabCard title="90 Days Workout Plan" image={Img1} />
+
 			<ButtonsGroup />
 		</div>
 	);

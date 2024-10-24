@@ -5,6 +5,7 @@ import VideoCard from "./VideoCard";
 import Video1 from "@/public/video1.png";
 import { useState } from "react";
 import Button from "@/components/shared ui/Button";
+import SearchBar from "@/components/shared ui/SearchBar";
 
 const TutorialsTab = () => {
 	const [checked, setChecked] = useState(false);
@@ -28,6 +29,7 @@ const TutorialsTab = () => {
 					the list of materials needed to start your journey without excuses.
 				</p>
 			</div>
+			<SearchBar />
 			<div className="flex flex-wrap lg:flex-nowrap gap-10">
 				<VideoCard
 					image={Video1}

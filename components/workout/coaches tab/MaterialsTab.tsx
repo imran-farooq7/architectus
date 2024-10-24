@@ -2,12 +2,12 @@
 import Button from "@/components/shared ui/Button";
 import Modal from "@/components/shared ui/Modal";
 import Line from "@/public/linewrk.png";
-import Search from "@/public/search.svg";
 import Image from "next/image";
 import MaterialsFaqs from "./MaterialsFaqs";
 
 import { useState } from "react";
 import CoachesAuthCard from "./CoachesLAuthCard";
+import SearchBar from "@/components/shared ui/SearchBar";
 
 const MaterialsTab = () => {
 	const [open, setOpen] = useState(false);
@@ -40,14 +40,7 @@ const MaterialsTab = () => {
 					</button>
 				</div>
 			</div>
-			<div className="relative mb-7 md:mb-16">
-				<input
-					placeholder="Search coach"
-					type="text"
-					className="rounded-[10px]  placeholder:text-[#0F0A19]/60 border py-3 pl-12 border-black/10 w-full md:w-[420px]"
-				/>
-				<Image src={Search} alt="search" className="absolute top-4 left-5" />
-			</div>
+			<SearchBar />
 			<MaterialsFaqs />
 			<div className="flex justify-center mt-8 md:mt-[60px]">
 				<Button text="Download" />

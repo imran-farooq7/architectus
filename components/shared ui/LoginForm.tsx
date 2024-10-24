@@ -60,12 +60,12 @@ const LoginForm = ({
 					Sign Up
 				</span>
 			</p>
-			<div className="flex items-center gap-2 my-8 justify-center">
+			{/* <div className="flex items-center gap-2 my-8 justify-center">
 				<Image src={LineLeft} alt="line" className="h-[1px] w-1/2 md:w-full" />
 				<span className="text-sm">Or</span>
 				<Image src={LineLeft} alt="line" className="h-[1px] w-1/2 md:w-full" />
-			</div>
-			<div className="gap-5 flex flex-col items-center gap-y-5">
+			</div> */}
+			{/* <div className="gap-5 flex flex-col items-center gap-y-5">
 				<button
 					onClick={() => setOpen(false)}
 					className="bg-transparent  border border-[#0F0A19]/10 flex items-center justify-center gap-4 text-[#0F0A19]/70 w-full h-[52px] rounded-[10px] hover:bg-[#3D2278] hover:border-none hover:text-white hover:scale-105 transition-all ease-in-out text-sm"
@@ -77,7 +77,7 @@ const LoginForm = ({
 					<Image src={Apple} alt="Apple" />
 					<span>Login with Apple</span>
 				</button>
-			</div>
+			</div> */}
 		</>
 	);
 };

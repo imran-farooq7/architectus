@@ -9,7 +9,7 @@ import LoadMore from "@/public/loadmore.png";
 const Reviews = () => {
 	return (
 		<div className="relative px-6 lg:px-28 xl:px-32 md:my-20 my-10">
-			<div className="flex flex-col md:flex-row items-start md:items-center max-w-[600px] mb-9 justify-between">
+			{/* <div className="flex flex-col md:flex-row items-start md:items-center max-w-[600px] mb-9 justify-between">
 				<h1 className="text-xl md:text-[32px] font-semibold leading-8">
 					Reviews (160)
 				</h1>
@@ -26,11 +26,29 @@ const Reviews = () => {
 						className="absolute top-5 right-[20px]"
 					/>
 				</div>
-			</div>
+			</div> */}
 			<div className="flex gap-x-28 gap-y-6 flex-col lg:flex-row">
 				<div>
 					<div>
-						<div className="-my-10">
+						<div>
+							<div className="flex flex-col md:flex-row items-start md:items-center max-w-[600px] mb-0 md:mb-8 justify-between">
+								<h1 className="text-xl md:text-[32px] font-semibold leading-8">
+									Reviews (160)
+								</h1>
+								<div className="relative my-8 md:my-0 w-full md:w-[180px]">
+									<select
+										defaultValue="All Ratings"
+										className="py-3 pl-5 pr-6 md:pr-12 rounded-[10px] w-full md:w-[180px] h-12  text-[#0F0A19]/80 border border-black/[0.12]"
+									>
+										<option>All Ratings</option>
+									</select>
+									<Image
+										src={Down}
+										alt="down"
+										className="absolute top-5 right-[20px]"
+									/>
+								</div>
+							</div>
 							{reviews.map((review) => (
 								<Review review={review} key={review.id} />
 							))}

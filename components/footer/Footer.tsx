@@ -1,7 +1,7 @@
 import FB from "@/public/fb.svg";
 import BgFooter from "@/public/footer background.png";
 import LinkedInn from "@/public/linkedinn.svg";
-import Logo from "@/public/logofootercap.svg";
+import Logo from "@/public/footerLogo.svg";
 import Twitter from "@/public/twitter.svg";
 import Image from "next/image";
 import Link from "next/link";

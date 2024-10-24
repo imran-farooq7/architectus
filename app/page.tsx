@@ -1,15 +1,21 @@
-import CallToAction from "@/components/CTA/CallToAction";
-import Faqs from "@/components/Faqs/Faqs";
-import Hero from "@/components/hero/Hero";
-import HowItWorks from "@/components/Howitworks/HowItWorks";
+import Navbar from "@/components/navbar/Navbar";
+import Reviews from "@/components/reviews/Reviews";
+import Workout from "@/components/workout/Workout";
+import Logo from "@/public/logonew.svg";
 
-export default function Home() {
+const WorkoutDetailsPage = () => {
 	return (
-		<>
-			<Hero />
-			<HowItWorks />
-			<Faqs />
-			<CallToAction />
-		</>
+		<div>
+			<Navbar logo={Logo} />
+			{/* <Breadcrumbs name={"Workout"} /> */}
+			<div className="workoutbg bg-no-repeat bg-center bg-cover relative">
+				{/* <Image src={BG} alt="bg" fill className="object-cover" quality={100} /> */}
+				<Workout />
+			</div>
+
+			<Reviews />
+		</div>
 	);
-}
+};
+
+export default WorkoutDetailsPage;

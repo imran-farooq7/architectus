@@ -69,7 +69,7 @@ const SignupForm = ({
 					Login
 				</span>
 			</p>
-			<div className="flex items-center justify-center gap-2 my-8">
+			{/* <div className="flex items-center justify-center gap-2 my-8">
 				<Image src={LineLeft} alt="line" className="h-[1px] w-1/2 md:w-full" />
 				<span className="text-sm">Or</span>
 				<Image src={LineLeft} alt="line" className="h-[1px] w-1/2 md:w-full" />
@@ -86,7 +86,7 @@ const SignupForm = ({
 					<Image src={Apple} alt="Apple" />
 					<span>Login with Apple</span>
 				</button>
-			</div>
+			</div> */}
 		</>
 	);
 };
