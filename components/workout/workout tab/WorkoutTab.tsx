@@ -5,6 +5,7 @@ import Img1 from "@/public/image 10.svg";
 import Img2 from "@/public/image 8.svg";
 import Img3 from "@/public/image 11.svg";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
+import Carousel from "@/components/shared ui/Carousel";
 
 const WorkoutTab = () => {
 	return (
@@ -30,11 +31,11 @@ const WorkoutTab = () => {
 					Create
 				</button>
 			</div>
-			<div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-8 items-center">
+			<Carousel slides={3}>
 				<WorkoutTabCard title="1° Month" image={Img1} />
 				<WorkoutTabCard title="2° Month" image={Img2} />
 				<WorkoutTabCard title="3° Month" image={Img3} />
-			</div>
+			</Carousel>
 			<ButtonsGroup />
 		</div>
 	);

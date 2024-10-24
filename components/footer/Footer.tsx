@@ -1,8 +1,7 @@
 import FB from "@/public/fb.svg";
 import BgFooter from "@/public/footer background.png";
 import LinkedInn from "@/public/linkedinn.svg";
-import Logo from "@/public/footer.svg";
-import LogoMobile from "@/public/footer mobile.png";
+import Logo from "@/public/logofootercap.svg";
 import Twitter from "@/public/twitter.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,12 +23,12 @@ const Footer = () => {
 				>
 					<div className="flex lg:flex-1">
 						<Link href="/">
-							<Image src={Logo} alt="logo" className="hidden md:inline-flex" />
-							<Image
+							<Image src={Logo} alt="logo" className="inline-flex" />
+							{/* <Image
 								src={LogoMobile}
 								alt="logo"
 								className="inline-flex md:hidden"
-							/>
+							/> */}
 						</Link>
 					</div>
 					<div className="flex gap-4">

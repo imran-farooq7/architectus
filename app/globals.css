@@ -90,8 +90,9 @@
 
 .slick-dots {
 	display: flex !important;
-	padding-top: 3.5rem !important;
+	padding: 3.5rem 0 !important;
 	position: static !important;
+	justify-content: center;
 }
 
 .slick-slide:not(.slick-active) {
@@ -138,6 +139,6 @@ select {
 	.slick-dots {
 		display: flex !important;
 		justify-content: center;
-		padding-bottom: 2rem;
+		padding: 2rem 0 3rem 0 !important;
 	}
 }

@@ -26,13 +26,6 @@ const Reviews = () => {
 						className="absolute top-5 right-[20px]"
 					/>
 				</div>
-				{/* <div className="text-base font-normal leading-6 my-8 text-[#0F0A19] flex gap-32 items-center">
-					<div className="flex md:items-center flex-col md:flex-row gap-y-4">
-						<div className="flex gap-6 justify-center md:justify-start items-center flex-wrap">
-							
-						</div>
-					</div>
-				</div> */}
 			</div>
 			<div className="flex gap-x-28 gap-y-6 flex-col lg:flex-row">
 				<div>
@@ -49,7 +42,6 @@ const Reviews = () => {
 					</button>
 				</div>
 				<div className="reviewbg rounded-3xl p-6 md:p-8 max-h-[520px]">
-					{/* <Image fill src={BG} alt="bg" /> */}
 					<h1 className="text-xl  md:text-[32px] font-semibold leading-8">
 						Add Rating & Review
 					</h1>

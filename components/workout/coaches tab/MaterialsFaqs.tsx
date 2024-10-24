@@ -9,22 +9,24 @@ import { MinusSmallIcon } from "@heroicons/react/24/outline";
 import Plus from "@/public/plus.svg";
 import Image from "next/image";
 
-const MaterialsFaqs = () => {
+const Coaches = () => {
 	const parser = new DOMParser();
 
 	return (
 		<div>
-			<div className=" max-w-7xl mx-auto">
+			<div className="max-w-7xl mx-auto">
 				<dl>
 					{materialsFaqs.map((faq) => (
 						<Disclosure as="div" key={faq.question} className="pt-6">
 							{({ open }) => (
 								<>
 									<dt className="faqs bg-white rounded-[18px]">
-										<DisclosureButton className="flex w-full items-start justify-between py-5 px-8 text-left  text-base ">
-											<span className="text-base font-medium ">
-												{faq.question}
-											</span>
+										<DisclosureButton className="flex w-full items-center justify-between py-5 px-8 text-left  text-base ">
+											<span
+												className="flex gap-4 items-center text-xl font-semibold"
+												dangerouslySetInnerHTML={{ __html: faq.question }}
+											/>
+
 											<span className="ml-6 flex h-7 items-center">
 												{open ? (
 													<MinusSmallIcon
@@ -37,10 +39,9 @@ const MaterialsFaqs = () => {
 											</span>
 										</DisclosureButton>
 										<DisclosurePanel as="dd" className="mt-2 pb-5 px-8">
-											<div
-												className="flex gap-8 text-lg items-center max-w-[59rem]"
-												dangerouslySetInnerHTML={{ __html: faq.answer }}
-											/>
+											<div className="flex gap-8 text-lg items-center max-w-[59rem]">
+												{faq.answer}
+											</div>
 										</DisclosurePanel>
 									</dt>
 								</>
@@ -53,4 +54,4 @@ const MaterialsFaqs = () => {
 	);
 };
 
-export default MaterialsFaqs;
+export default Coaches;

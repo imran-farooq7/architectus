@@ -2,8 +2,8 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "@/public/logomobile.svg";
-import LogoWhite from "@/public/logowhite.svg";
+import Logo from "@/public/logoblkcap.svg";
+import LogoWhite from "@/public/logocap.svg";
 
 const Navbar = ({
 	logo,
@@ -15,7 +15,7 @@ const Navbar = ({
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<div className="py-6 px-10  md:px-20">
+		<div className="py-6 pl-0  md:px-20">
 			<header className="z-50">
 				<nav className="flex items-center justify-between" aria-label="Global">
 					<div className="flex lg:flex-1">

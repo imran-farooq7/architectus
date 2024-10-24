@@ -27,8 +27,12 @@ const BodyTab = () => {
 					Create
 				</button>
 			</div>
-			<Image src={Workout} alt="workout" className="hidden md:block" />
-			<Image src={WorkoutMobile} alt="workout" className="block md:hidden" />
+			<Image src={Workout} alt="workout" className="hidden md:block mb-16" />
+			<Image
+				src={WorkoutMobile}
+				alt="workout"
+				className="block md:hidden mb-8"
+			/>
 			<ButtonsGroup />
 			<Modal open={open} setOpen={setOpen}>
 				<CreateCard setOpen={setOpen} />{" "}

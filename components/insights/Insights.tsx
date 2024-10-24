@@ -1,4 +1,4 @@
-import Carousel from "./Carousel";
+import Carousel from "../shared ui/Carousel";
 
 const Insights = () => {
 	return (

@@ -2,7 +2,7 @@ import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
 import Navbar from "@/components/navbar/Navbar";
 import Reviews from "@/components/reviews/Reviews";
 import Workout from "@/components/workout/Workout";
-import Logo from "@/public/logoblack.svg";
+import Logo from "@/public/logoblkcap.svg";
 
 const WorkoutDetailsPage = () => {
 	return (
