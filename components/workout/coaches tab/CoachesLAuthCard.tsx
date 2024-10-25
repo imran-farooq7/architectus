@@ -1,20 +1,18 @@
 import { Dispatch, SetStateAction } from "react";
+import ForgetPassword from "../../shared ui/ForgetPassword";
 import LoginForm from "../../shared ui/LoginForm";
 import SignupForm from "../../shared ui/SignupForm";
-import ForgetPassword from "../../shared ui/ForgetPassword";
 
 const CoachesAuthCard = ({
 	setOpen,
 	currentAuth,
 	setCurrentAuth,
 	isCoach,
-	setIsCoach,
 }: {
 	setOpen: Dispatch<SetStateAction<boolean>>;
 	currentAuth: string;
 	setCurrentAuth: Dispatch<SetStateAction<string>>;
 	isCoach?: boolean;
-	setIsCoach?: Dispatch<SetStateAction<boolean>>;
 }) => {
 	let content;
 	if (currentAuth === "login") {
@@ -34,7 +32,6 @@ const CoachesAuthCard = ({
 				title="Coach"
 				description="Manage products, track orders, and connect with buyers."
 				setCurrentAuth={setCurrentAuth}
-				setIsCoach={setIsCoach!}
 			/>
 		);
 	}
