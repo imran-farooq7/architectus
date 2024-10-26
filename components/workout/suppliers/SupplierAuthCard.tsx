@@ -2,6 +2,8 @@ import { Dispatch, SetStateAction } from "react";
 import LoginForm from "../../shared ui/LoginForm";
 import ForgetPassword from "@/components/shared ui/ForgetPassword";
 import SignupForm from "@/components/shared ui/SignupForm";
+import CoachSignup from "@/components/shared ui/CoachSignup";
+import SupplierPayment from "./SupplierPayment";
 
 const SupplierAuthCard = ({
 	setOpen,
@@ -25,16 +27,18 @@ const SupplierAuthCard = ({
 	}
 	if (currentAuth === "signup") {
 		content = (
-			<SignupForm
-				setOpen={setOpen}
-				title="Supplier"
-				description="Manage products, track orders, and connect with buyers."
+			<CoachSignup
+				isSupplier
 				setCurrentAuth={setCurrentAuth}
+				setOpen={setOpen}
 			/>
 		);
 	}
 	if (currentAuth === "forgetPassword") {
 		content = <ForgetPassword setOpen={setOpen} />;
+	}
+	if (currentAuth === "supplierPayment") {
+		content = <SupplierPayment setOpen={setOpen} />;
 	}
 	return (
 		<div className="flex relative flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">

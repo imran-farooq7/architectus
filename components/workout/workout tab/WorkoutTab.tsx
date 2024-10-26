@@ -8,6 +8,7 @@ import WorkoutTabCard from "./WorkoutTabCard";
 import Modal from "@/components/shared ui/Modal";
 import CreateCard from "../body/CreateCard";
 import { useState } from "react";
+import SearchBar from "@/components/shared ui/SearchBar";
 
 const WorkoutTab = () => {
 	const [open, setOpen] = useState(false);
@@ -37,10 +38,11 @@ const WorkoutTab = () => {
 					Create
 				</button>
 			</div>
+			<SearchBar isWorkout />
 
 			<WorkoutTabCard title="90 Days Workout Plan" image={Img1} />
 
-			<ButtonsGroup />
+			<ButtonsGroup isWorkout />
 			<Reviews isCoach={false} />
 			<Modal open={open} setOpen={setOpen}>
 				<CreateCard setOpen={setOpen} />

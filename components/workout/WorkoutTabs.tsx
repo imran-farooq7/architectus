@@ -1,6 +1,6 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import BodyTab from "./body/BodyTab";
-import MaterialsTab from "./coaches tab/MaterialsTab";
+import CoachesTab from "./coaches tab/CoachesTab";
 import TutorialsTab from "./tutorials tab/TutorialsTab";
 import WorkoutTab from "./workout tab/WorkoutTab";
 import SuppliersTab from "./suppliers/SuppliersTab";
@@ -56,7 +56,7 @@ const WorkoutTabs = () => {
 					<WorkoutTab />
 				</TabPanel>
 				<TabPanel>
-					<MaterialsTab />
+					<CoachesTab />
 				</TabPanel>
 				<TabPanel>
 					<TutorialsTab />

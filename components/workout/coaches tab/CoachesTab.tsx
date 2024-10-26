@@ -5,11 +5,11 @@ import Line from "@/public/linewrk.png";
 import Image from "next/image";
 import MaterialsFaqs from "./MaterialsFaqs";
 
+import SearchBar from "@/components/shared ui/SearchBar";
 import { useState } from "react";
 import CoachesAuthCard from "./CoachesLAuthCard";
-import SearchBar from "@/components/shared ui/SearchBar";
 
-const MaterialsTab = () => {
+const CoachesTab = () => {
 	const [open, setOpen] = useState(false);
 	const [currentAuth, setCurrentAuth] = useState("login");
 
@@ -53,9 +53,9 @@ const MaterialsTab = () => {
 			</div>
 			<SearchBar />
 			<MaterialsFaqs />
-			<div className="flex justify-center my-8 md:my-[60px]">
+			{/* <div className="flex justify-center my-8 md:my-[60px]">
 				<Button text="Download" />
-			</div>
+			</div> */}
 			<Modal open={open} setOpen={setOpen}>
 				<CoachesAuthCard
 					setOpen={setOpen}
@@ -67,4 +67,4 @@ const MaterialsTab = () => {
 	);
 };
 
-export default MaterialsTab;
+export default CoachesTab;

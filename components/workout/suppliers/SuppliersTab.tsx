@@ -35,17 +35,25 @@ const SuppliersTab = () => {
 				</p>
 				<div className="flex mt-10 gap-5 flex-col md:flex-row">
 					<button
-						onClick={() => setOpenUploadForm(true)}
+						onClick={() => {
+							setCurrentAuth("signup");
+							setOpen(true);
+						}}
 						className="bg-[#3D2278] font-medium text-lg text-white px-10 md:px-[3.8rem] py-3 rounded-xl"
 					>
 						Advertise
 					</button>
-					<button onClick={() => setOpen(true)}>
+					<button
+						onClick={() => {
+							setCurrentAuth("login");
+							setOpen(true);
+						}}
+					>
 						<Button text="Login" />
 					</button>
 				</div>
 			</div>
-			<SearchBar />
+			<SearchBar isSupplier />
 
 			<Carousel slides={4}>
 				<SupplierCard image={Skan} />
@@ -63,9 +71,9 @@ const SuppliersTab = () => {
 					setOpen={setOpen}
 				/>
 			</Modal>
-			<Modal open={openUploadForm} setOpen={setOpenUploadForm}>
+			{/* <Modal open={openUploadForm} setOpen={setOpenUploadForm}>
 				<UploadSupplierForm setOpen={setOpenUploadForm} />
-			</Modal>
+			</Modal> */}
 		</div>
 	);
 };

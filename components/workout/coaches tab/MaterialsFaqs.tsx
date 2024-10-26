@@ -18,7 +18,7 @@ import Reviews from "@/components/reviews/Reviews";
 const Coaches = () => {
 	return (
 		<div>
-			<div className="max-w-7xl mx-auto">
+			<div className="max-w-7xl mx-auto mb-20">
 				<dl>
 					{coaches.map((faq) => (
 						<Disclosure as="div" key={faq.question} className="pt-6">

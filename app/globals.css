@@ -146,3 +146,11 @@ select {
 		padding: 2rem 0 3rem 0 !important;
 	}
 }
+.supplierPayment {
+	background: linear-gradient(
+		278.14deg,
+		rgba(253, 241, 255, 0.85) 5.41%,
+		rgba(248, 248, 248, 0.85) 50.97%,
+		rgba(236, 235, 255, 0.85) 96.52%
+	);
+}

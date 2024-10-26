@@ -30,7 +30,7 @@ const TutorialsTab = () => {
 					the list of materials needed to start your journey without excuses.
 				</p>
 			</div>
-			<SearchBar />
+			<SearchBar isWorkout />
 			<div className="flex flex-wrap lg:flex-nowrap gap-10">
 				<VideoCard
 					image={Video1}

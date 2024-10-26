@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import ForgetPassword from "../../shared ui/ForgetPassword";
 import LoginForm from "../../shared ui/LoginForm";
 import SignupForm from "../../shared ui/SignupForm";
+import CoachSignup from "@/components/shared ui/CoachSignup";
 
 const CoachesAuthCard = ({
 	setOpen,
@@ -26,14 +27,7 @@ const CoachesAuthCard = ({
 		);
 	}
 	if (currentAuth === "signup" || (isCoach && currentAuth !== "login")) {
-		content = (
-			<SignupForm
-				setOpen={setOpen}
-				title="Coach"
-				description="Manage products, track orders, and connect with buyers."
-				setCurrentAuth={setCurrentAuth}
-			/>
-		);
+		content = <CoachSignup setOpen={setOpen} setCurrentAuth={setCurrentAuth} />;
 	}
 	if (currentAuth === "forgetPassword") {
 		content = <ForgetPassword setOpen={setOpen} />;
