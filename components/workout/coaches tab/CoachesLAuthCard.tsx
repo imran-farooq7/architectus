@@ -27,7 +27,13 @@ const CoachesAuthCard = ({
 		);
 	}
 	if (currentAuth === "signup" || (isCoach && currentAuth !== "login")) {
-		content = <CoachSignup setOpen={setOpen} setCurrentAuth={setCurrentAuth} />;
+		content = (
+			<CoachSignup
+				isSupplier={false}
+				setOpen={setOpen}
+				setCurrentAuth={setCurrentAuth}
+			/>
+		);
 	}
 	if (currentAuth === "forgetPassword") {
 		content = <ForgetPassword setOpen={setOpen} />;
