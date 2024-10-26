@@ -14,13 +14,16 @@ const CoachSignup = ({
 	isSupplier: boolean;
 }) => {
 	return (
-		<>
-			<div className="relative mb-[14px]">
+		<div>
+			<Image
+				src={Cross}
+				alt="close"
+				onClick={() => setOpen(false)}
+				className="top-[30px] right-[30px] absolute cursor-pointer"
+			/>
+			<div className="my-4">
 				<div className="relative" id="dropzone">
-					<input
-						type="file"
-						className="absolute inset-0 w-full h-full opacity-0 z-50"
-					/>
+					<input type="file" className="opacity-0 top-8 absolute" />
 					<div className="text-center">
 						<Image src={Upload} alt="upload" className="mx-auto" />
 
@@ -38,12 +41,6 @@ const CoachSignup = ({
 					</div>
 				</div>
 			</div>
-			<Image
-				src={Cross}
-				alt="close"
-				onClick={() => setOpen(false)}
-				className="top-[30px] right-[30px] absolute cursor-pointer"
-			/>
 
 			<div className="gap-5 flex flex-col mt-8 gap-y-5">
 				<input
@@ -58,7 +55,7 @@ const CoachSignup = ({
 				<div
 					className={`${
 						isSupplier ? "hidden" : "flex"
-					}  flex-wrap justify-between`}
+					}  flex-wrap justify-between gap-y-5`}
 				>
 					<div className="relative w-full  md:w-[260px]">
 						<div className=" relative borderUpload py-10" id="dropzone">
@@ -192,7 +189,7 @@ const CoachSignup = ({
             <span>Login with Apple</span>
         </button>
     </div> */}
-		</>
+		</div>
 	);
 };
 
