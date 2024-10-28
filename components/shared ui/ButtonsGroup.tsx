@@ -1,6 +1,15 @@
+import { Dispatch, SetStateAction } from "react";
 import Button from "./Button";
 
-const ButtonsGroup = ({ isWorkout }: { isWorkout?: boolean }) => {
+const ButtonsGroup = ({
+	isWorkout,
+	setModalContent,
+	setOpen,
+}: {
+	isWorkout?: boolean;
+	setModalContent?: Dispatch<SetStateAction<string>>;
+	setOpen?: Dispatch<SetStateAction<boolean>>;
+}) => {
 	return (
 		<div className="flex tabs gap-5 flex-wrap md:justify-center">
 			{isWorkout ? (
@@ -11,8 +20,22 @@ const ButtonsGroup = ({ isWorkout }: { isWorkout?: boolean }) => {
 			) : (
 				<>
 					<Button text="Body Scan" />
-					<Button text="Modify" />
-					<Button text="Download" />
+					<div
+						onClick={() => {
+							setModalContent!("modify");
+							setOpen!(true);
+						}}
+					>
+						<Button text="Modify" />
+					</div>
+					<div
+						onClick={() => {
+							setModalContent!("download");
+							setOpen!(true);
+						}}
+					>
+						<Button text="Download" />
+					</div>
 					<Button text="Share" />
 				</>
 			)}

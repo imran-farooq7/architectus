@@ -43,14 +43,14 @@ const SuppliersTab = () => {
 					>
 						Advertise
 					</button>
-					<button
+					<div
 						onClick={() => {
 							setCurrentAuth("login");
 							setOpen(true);
 						}}
 					>
 						<Button text="Login" />
-					</button>
+					</div>
 				</div>
 			</div>
 			<SearchBar isSupplier />

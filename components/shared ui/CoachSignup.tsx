@@ -19,38 +19,78 @@ const CoachSignup = ({
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-[30px] right-[30px] absolute cursor-pointer"
+				className="top-[15px] right-[30px] absolute cursor-pointer"
 			/>
 			<div className="my-4">
-				<div className="relative" id="dropzone">
-					<input type="file" className="opacity-0 top-8 absolute" />
-					<div className="text-center">
-						<Image src={Upload} alt="upload" className="mx-auto" />
+				{isSupplier ? (
+					<div className="relative w-full">
+						<div className=" relative borderUpload py-10" id="dropzone">
+							<input
+								type="file"
+								className="absolute inset-0 w-full h-full opacity-0 z-50"
+							/>
+							<div className="text-center">
+								<Image src={VideoUpload} alt="upload" className="mx-auto" />
 
-						<h3 className="mt-6 font-semibold text-[#0B0B0B]">
-							<label htmlFor="file-upload" className="relative cursor-pointer">
-								<span>Upload your profile</span>
-								<input
-									id="file-upload"
-									name="file-upload"
-									type="file"
-									className="sr-only"
-								/>
-							</label>
-						</h3>
+								<h3 className="mt-6 text-sm font-normal text-[#0B0B0B]">
+									<label
+										htmlFor="file-upload"
+										className="relative cursor-pointer"
+									>
+										<span>Drag and drop</span>
+										<span className="text-[#3D2278] font-semibold">
+											{" "}
+											or browse
+										</span>
+										<input
+											id="file-upload"
+											name="file-upload"
+											type="file"
+											className="sr-only"
+										/>
+									</label>
+								</h3>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
+				) : (
+					<div className="relative" id="dropzone">
+						<input type="file" className="opacity-0 top-8 absolute" />
+						<div className="text-center">
+							<Image src={Upload} alt="upload" className="mx-auto" />
 
+							<h3 className="mt-6 font-semibold text-[#0B0B0B]">
+								<label
+									htmlFor="file-upload"
+									className="relative cursor-pointer"
+								>
+									<span>Upload your profile</span>
+									<input
+										id="file-upload"
+										name="file-upload"
+										type="file"
+										className="sr-only"
+									/>
+								</label>
+							</h3>
+						</div>
+					</div>
+				)}
+			</div>
+			{isSupplier ? (
+				<p className="text-center font-semibold text-[#0F0A19]">
+					Upload Product, service or event image
+				</p>
+			) : null}
 			<div className="gap-5 flex flex-col mt-8 gap-y-5">
 				<input
 					type="text"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
-					placeholder="Enter Full Name"
+					placeholder={isSupplier ? "Enter Title" : "Enter Full Name"}
 				/>
 				<textarea
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA] h-[120px]"
-					placeholder="Enter Bio"
+					placeholder={isSupplier ? "Enter Description" : "Enter Bio"}
 				/>
 				<div
 					className={`${
@@ -119,38 +159,40 @@ const CoachSignup = ({
 					</div>
 				</div>
 				<input
-					type="url"
+					type="text"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
-					placeholder="Add your website link"
+					placeholder={isSupplier ? "Brand Name" : "Add your website link"}
 				/>
 				<input
 					type="text"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
-					placeholder="Instagram"
+					placeholder={isSupplier ? "Price" : "Instagram"}
 				/>
 				<input
 					type="text"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
-					placeholder="Facebook"
+					placeholder={isSupplier ? "Discount Price" : "Facebook"}
 				/>
 				<input
 					type="text"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
-					placeholder="YouTube"
+					placeholder={isSupplier ? "Website link" : "YouTube"}
 				/>
 				<input
 					type="email"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
-					placeholder="Enter Your Email"
+					placeholder={isSupplier ? "Email Address" : "Enter Email address"}
 				/>
 				<input
 					type="password"
-					placeholder="Enter Your Password"
+					placeholder={isSupplier ? "Create password" : "Enter your password"}
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
 				/>
 				<input
 					type="password"
-					placeholder="Enter Your Confirm Password"
+					placeholder={
+						isSupplier ? "Confirm Passowrd" : "Enter Your Confirm Password"
+					}
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
 				/>
 				<button

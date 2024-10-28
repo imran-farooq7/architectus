@@ -10,11 +10,12 @@ import Reviews from "@/components/reviews/Reviews";
 
 const BodyTab = () => {
 	const [open, setOpen] = useState(false);
+	const [modalContent, setModalContent] = useState("");
 
 	return (
 		<div>
 			<div className="flex flex-col gap-6 md:gap-8 my-14 md:my-20">
-				<h1 className="text-4xl md:text-[64px] font-bold text-[#0F0A19]">
+				<h1 className="text-4xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19]">
 					Visualization
 				</h1>
 				<p className="text-sm md:text-lg font-normal leading-[26px] max-w-[20rem] md:max-w-[34rem]">
@@ -22,7 +23,10 @@ const BodyTab = () => {
 					Improve, Shape, and Size.
 				</p>
 				<button
-					onClick={() => setOpen(true)}
+					onClick={() => {
+						setModalContent("create");
+						setOpen(true);
+					}}
 					className="bg-[#3D2278] self-start font-medium text-lg text-white px-10 md:px-[4.35rem] py-3 rounded-xl"
 				>
 					Create
@@ -34,11 +38,11 @@ const BodyTab = () => {
 				alt="workout"
 				className="block md:hidden mb-8"
 			/>
-			<ButtonsGroup />
+			<ButtonsGroup setModalContent={setModalContent} setOpen={setOpen} />
 			<Reviews isCoach={false} />
 
 			<Modal open={open} setOpen={setOpen}>
-				<CreateCard setOpen={setOpen} />{" "}
+				<CreateCard setOpen={setOpen} modalContent={modalContent} />{" "}
 			</Modal>
 		</div>
 	);

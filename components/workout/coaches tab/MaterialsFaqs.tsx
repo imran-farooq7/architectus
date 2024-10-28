@@ -43,7 +43,10 @@ const Coaches = () => {
 													<div className="flex gap-8 items-center">
 														<div className="md:flex hidden gap-[10px]">
 															{faq.trainingTypes?.map((training) => (
-																<span className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1">
+																<span
+																	key={training}
+																	className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1"
+																>
 																	{training}
 																</span>
 															))}
@@ -65,7 +68,10 @@ const Coaches = () => {
 													</span>
 													<div className="flex gap-[10px]">
 														{faq.trainingTypes?.map((training) => (
-															<span className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1">
+															<span
+																key={training}
+																className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1"
+															>
 																{training}
 															</span>
 														))}
@@ -77,7 +83,10 @@ const Coaches = () => {
 													</span>
 													<div className="flex gap-[10px]">
 														{faq.languages?.map((lang) => (
-															<span className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1">
+															<span
+																key={lang}
+																className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1"
+															>
 																{lang}
 															</span>
 														))}
