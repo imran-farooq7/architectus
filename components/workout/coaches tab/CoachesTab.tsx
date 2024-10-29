@@ -41,14 +41,14 @@ const CoachesTab = () => {
 					>
 						I'm a Coach
 					</button>
-					<button
+					<div
 						onClick={() => {
 							setCurrentAuth("login");
 							setOpen(true);
 						}}
 					>
 						<Button text="Login" />
-					</button>
+					</div>
 				</div>
 			</div>
 			<SearchBar />

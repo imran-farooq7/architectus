@@ -25,10 +25,12 @@ const ButtonsGroup = ({
 							setModalContent!("modify");
 							setOpen!(true);
 						}}
+						className="w-full"
 					>
 						<Button text="Modify" />
 					</div>
 					<div
+						className="w-full"
 						onClick={() => {
 							setModalContent!("download");
 							setOpen!(true);
