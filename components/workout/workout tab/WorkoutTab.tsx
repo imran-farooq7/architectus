@@ -38,7 +38,7 @@ const WorkoutTab = () => {
 					Create
 				</button>
 			</div>
-			<SearchBar isWorkout />
+			{/* <SearchBar isWorkout /> */}
 
 			<WorkoutTabCard title="90 Days Workout Plan" image={Img1} />
 
