@@ -33,7 +33,7 @@ const SuppliersTab = () => {
 					On this page, you can find the ideal suppliers to obtain all the
 					materials, equipment, and supplements necessary for your journey.
 				</p>
-				<div className="flex mt-10 gap-5 flex-col md:flex-row">
+				<div className="flex mt-10 items-center gap-5 flex-col md:flex-row">
 					<button
 						onClick={() => {
 							setCurrentAuth("signup");

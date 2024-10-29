@@ -2,7 +2,7 @@ import ContactContainer from "@/components/Contact/ContactContainer";
 import Navbar from "@/components/navbar/Navbar";
 import Line from "@/public/contactline.png";
 import Phone from "@/public/phone.png";
-import Logo from "@/public/logoblack.svg";
+import Logo from "@/public/logonew.svg";
 import Address from "@/public/address.png";
 import Email from "@/public/email.png";
 

@@ -25,40 +25,55 @@ const Coaches = () => {
 							{({ open }) => (
 								<>
 									<dt className="faqs bg-white rounded-[18px]">
-										<DisclosureButton className="flex w-full items-center justify-between py-5 px-8 text-left  text-base ">
-											<span className="flex gap-4 items-center md:text-xl text-sm  font-semibold">
-												<div
-													dangerouslySetInnerHTML={{ __html: faq.question }}
-													className="flex items-center gap-4"
-												/>
-											</span>
+										<DisclosureButton className="flex w-full gap-4 flex-col  py-5 px-4 md:px-8 text-left  text-base ">
+											<div className="flex items-center w-full justify-between ">
+												<span className="flex flex-col gap-4  md:text-xl text-sm  font-semibold">
+													<div
+														dangerouslySetInnerHTML={{ __html: faq.question }}
+														className="flex items-center gap-4"
+													/>
+												</span>
 
-											<span className="ml-6 flex h-7 items-center">
-												{open ? (
-													<div className="flex gap-8">
-														<Image src={Share} alt="share" />
-														<Image src={Minus} alt="minus" />
-													</div>
-												) : (
-													<div className="flex gap-8 items-center">
-														<div className="md:flex hidden gap-[10px]">
-															{faq.trainingTypes?.map((training) => (
-																<span
-																	key={training}
-																	className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1"
-																>
-																	{training}
-																</span>
-															))}
-														</div>
+												<span className="ml-6 flex h-7 items-center">
+													{open ? (
 														<div className="flex gap-8">
 															<Image src={Share} alt="share" />
-															<Image src={Plus} alt="plus" />
+															<Image src={Minus} alt="minus" />
 														</div>
-													</div>
-												)}
-											</span>
+													) : (
+														<div className="flex gap-8 items-center">
+															<div className="md:flex hidden gap-[10px]">
+																{faq.trainingTypes?.map((training) => (
+																	<span
+																		key={training}
+																		className="bg-[#3D2278]/10 text-[#0F1017] text-sm rounded-[10px] px-5 py-1"
+																	>
+																		{training}
+																	</span>
+																))}
+															</div>
+															<div className="flex gap-8">
+																<Image src={Share} alt="share" />
+																<Image src={Plus} alt="plus" />
+															</div>
+														</div>
+													)}
+												</span>
+											</div>
+											{open ? null : (
+												<div className="md:hidden flex gap-[10px]">
+													{faq.trainingTypes?.map((training) => (
+														<span
+															key={training}
+															className="bg-[#3D2278]/10 text-[#0F1017] text-xs rounded-[10px] px-5 py-1"
+														>
+															{training}
+														</span>
+													))}
+												</div>
+											)}
 										</DisclosureButton>
+
 										<DisclosurePanel as="dd" className="mt-2 pb-5 px-8">
 											<div className="flex flex-col pb-7 gap-6 border-b-[#0F0A19]/20 border-b">
 												<p className="text-lg">{faq.bio}</p>

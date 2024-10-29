@@ -3,6 +3,7 @@ import Logo from "@/public/logonew.svg";
 import LogoWhite from "@/public/logocap.svg";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import Contact from "@/public/contact.svg";
 
 const Navbar = ({
 	logo,
@@ -12,7 +13,7 @@ const Navbar = ({
 	isLandingPage?: boolean;
 }) => {
 	return (
-		<div className="py-4 pl-5 md:px-20 navbar">
+		<div className="px-5 md:px-20 navbar">
 			<header className="z-50">
 				<nav className="flex items-center justify-between" aria-label="Global">
 					<div className="flex lg:flex-1">
@@ -36,14 +37,9 @@ const Navbar = ({
 						</button>
 					</div> */}
 
-					{/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-						<Link
-							href={"/contact"}
-							className="lg:inline-flex px-8 py-[14px] rounded-[10px] bg-[#3D2278] font-medium text-white"
-						>
-							Contact
-						</Link>
-					</div> */}
+					<Link href={"/contact"}>
+						<Image src={Contact} alt="contact us" />
+					</Link>
 				</nav>
 				{/* <Dialog
 					className="lg:hidden"
