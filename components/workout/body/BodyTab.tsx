@@ -27,7 +27,7 @@ const BodyTab = () => {
 						setModalContent("create");
 						setOpen(true);
 					}}
-					className="bg-[#3D2278] self-start font-medium text-lg text-white px-10 md:px-[4.35rem] py-3 rounded-xl"
+					className="bg-[#3D2278] self-stretch md:self-start font-medium text-lg text-white px-10 md:px-[4.35rem] py-3 rounded-xl"
 				>
 					Create
 				</button>
