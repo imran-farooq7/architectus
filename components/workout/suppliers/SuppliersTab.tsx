@@ -27,7 +27,7 @@ const SuppliersTab = () => {
 		<div className="flex flex-col ">
 			<div className="my-14 md:my-20 space-y-8">
 				<h1 className="max-w-full text-4xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">
-					Suppliers{" "}
+					Store{" "}
 				</h1>
 				<p className="text-sm !mt-5 md:mt-8 md:text-lg font-normal leading-[26px] max-w-[20rem] md:max-w-[34rem]">
 					On this page, you can find the ideal suppliers to obtain all the

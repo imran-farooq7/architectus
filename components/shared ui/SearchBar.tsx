@@ -5,28 +5,44 @@ import Comment from "@/public/comment.svg";
 const SearchBar = ({
 	isWorkout,
 	isSupplier,
+	isTutorial,
 }: {
 	isWorkout?: boolean;
 	isSupplier?: boolean;
+	isTutorial?: boolean;
 }) => {
 	let content;
 	if (isSupplier) {
 		content = (
-			<span className="font-semibold">
-				workout supplements, vitamins, training equipment, sportswear,{" "}
-				<span className="font-normal">and country location.</span>
-			</span>
+			<p className="text-xs md:text-sm text-[#0F0A19]/60 max-w-[30rem]">
+				Search for workout{" "}
+				<span className="font-semibold">
+					supplements,vitamins, training equipment, sportswear, events and
+					country location.
+				</span>
+			</p>
 		);
 	}
+
 	if (isWorkout) {
 		content = (
-			<span className="font-semibold">
-				sport discipline, training method, exercise type, skill level, full
-				body,{" "}
-				<span className="font-normal">
-					or focus on a specific muscle group.
+			<p className={`text-xs md:text-sm text-[#0F0A19]/60`}>
+				Search for{" "}
+				<span className="font-semibold">
+					coach, sport discipline, training method, exercise type, skill level.
 				</span>
-			</span>
+			</p>
+		);
+	}
+	if (isTutorial) {
+		content = (
+			<p className="text-xs md:text-sm text-[#0F0A19]/60 max-w-[34rem]">
+				Search for{" "}
+				<span className="font-semibold">
+					coach, sport discipline, training method, exercise type, skill level,
+					full body, or focus on a specific muscle group.
+				</span>
+			</p>
 		);
 	}
 	return (
@@ -41,17 +57,8 @@ const SearchBar = ({
 			</div>
 			<div className="flex gap-[10px] items-center">
 				<Image src={Comment} alt="comment" />
-				{isWorkout || isSupplier ? (
-					<p className="text-xs max-w-xl md:text-sm text-[#0F0A19]/60">
-						Search for workout plans using keywords such as {content}
-					</p>
-				) : (
-					<p className="text-sm text-[#0F0A19]/60">
-						Search for training types using keywords such as{" "}
-						<span className="font-semibold">CrossFit, Boxing, or Strength</span>
-						.
-					</p>
-				)}
+
+				<p>{content}</p>
 			</div>
 		</div>
 	);

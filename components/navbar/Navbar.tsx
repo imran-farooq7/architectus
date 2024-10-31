@@ -4,6 +4,7 @@ import LogoWhite from "@/public/logocap.svg";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Contact from "@/public/contact.svg";
+import LanguageMenu from "../shared ui/LanguageMenu";
 
 const Navbar = ({
 	logo,
@@ -37,9 +38,12 @@ const Navbar = ({
 						</button>
 					</div> */}
 
-					<Link href={"/contact"}>
-						<Image src={Contact} alt="contact us" />
-					</Link>
+					<div className="flex items-center">
+						<LanguageMenu />
+						<Link href={"/contact"}>
+							<Image src={Contact} alt="contact us" />
+						</Link>
+					</div>
 				</nav>
 				{/* <Dialog
 					className="lg:hidden"

@@ -3,6 +3,7 @@ import Upload from "@/public/avatar upload.svg";
 import VideoUpload from "@/public/vidupicon.svg";
 import Cross from "@/public/close.png";
 import { Dispatch, SetStateAction } from "react";
+import Eng from "@/public/eng.svg";
 
 const CoachSignup = ({
 	setOpen,
@@ -14,7 +15,7 @@ const CoachSignup = ({
 	isSupplier: boolean;
 }) => {
 	return (
-		<div>
+		<div className="p-8 h-[80vh]  overflow-y-scroll">
 			<Image
 				src={Cross}
 				alt="close"
@@ -89,8 +90,12 @@ const CoachSignup = ({
 					placeholder={isSupplier ? "Enter Title" : "Enter Full Name"}
 				/>
 				<textarea
-					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA] h-[120px]"
-					placeholder={isSupplier ? "Enter Description" : "Enter Bio"}
+					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA] h-[140px]"
+					placeholder={
+						isSupplier
+							? "Write a small description about your product or service such as product/service type, relevant sports categories, and available shipping countries."
+							: "Create a small description about your sport discipline, training method, exercise type, and your skill level."
+					}
 				/>
 				<div
 					className={`${
@@ -158,6 +163,15 @@ const CoachSignup = ({
 						</div>
 					</div>
 				</div>
+				<div className="relative">
+					{" "}
+					<input
+						type="text"
+						className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
+						placeholder="Language"
+					/>
+					<Image src={Eng} alt="language" className="absolute top-4 right-4" />
+				</div>
 				<input
 					type="text"
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
@@ -185,14 +199,12 @@ const CoachSignup = ({
 				/>
 				<input
 					type="password"
-					placeholder={isSupplier ? "Create password" : "Enter your password"}
+					placeholder={"Create Password"}
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
 				/>
 				<input
 					type="password"
-					placeholder={
-						isSupplier ? "Confirm Passowrd" : "Enter Your Confirm Password"
-					}
+					placeholder={"Confirm Passowrd"}
 					className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 py-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA]"
 				/>
 				<button

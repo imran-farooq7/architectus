@@ -31,27 +31,29 @@ const CoachesTab = () => {
 					Now that you have the vision and the plan, on this page you'll find
 					the list of Coaches needed to start your journey without excuses.
 				</p>
-				<div className="flex mt-10 gap-5 flex-col md:flex-row">
+				<div className="flex mt-10 gap-5 flex-row">
 					<button
 						onClick={() => {
 							setCurrentAuth("signup");
 							setOpen(true);
 						}}
-						className="bg-[#3D2278] font-medium text-lg text-white px-10 md:px-[3.3rem] py-3 rounded-xl"
+						className="bg-[#3D2278] font-medium text-lg text-white px-6 w-40 md:w-52 py-3 rounded-xl"
 					>
 						I'm a Coach
 					</button>
-					<div
+
+					<button
 						onClick={() => {
 							setCurrentAuth("login");
 							setOpen(true);
 						}}
+						className="border-[#3D2278] border-[2px] font-medium text-lg text-[#3D2278] w-40 md:w-52 py-3 rounded-xl"
 					>
-						<Button text="Login" />
-					</div>
+						Login
+					</button>
 				</div>
 			</div>
-			<SearchBar />
+			<SearchBar isWorkout />
 			<MaterialsFaqs />
 			{/* <div className="flex justify-center my-8 md:my-[60px]">
 				<Button text="Download" />

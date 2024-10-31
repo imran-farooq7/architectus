@@ -18,7 +18,7 @@ const LoginForm = ({
 	setCurrentAuth: Dispatch<SetStateAction<string>>;
 }) => {
 	return (
-		<>
+		<div className="p-8">
 			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">
 				{title} Login
 			</h1>
@@ -78,7 +78,7 @@ const LoginForm = ({
 					<span>Login with Apple</span>
 				</button>
 			</div> */}
-		</>
+		</div>
 	);
 };
 

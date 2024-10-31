@@ -8,37 +8,39 @@ const SupplierPayment = ({
 	setOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
 	return (
-		<div className="flex relative flex-col">
-			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">
+		<div className="flex relative flex-col p-5 md:p-8">
+			<h1 className="font-bold text-xl  md:text-2xl text-[#0B0B0B] text-left">
 				Supplier Plan
 			</h1>
-			<p className="mt-4 text-[#6D6D6D] text-left text-sm">
+			<p className="mt-4 text-[#6D6D6D] w-[275px] md:w-full text-left text-sm">
 				Don’t miss out grab our exclusive discount before the official launch!
 			</p>
 			<Image
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-[5px] right-[10px] absolute cursor-pointer"
+				className="top-5 right-5 absolute cursor-pointer"
 			/>
-			<div className="supplierPayment p-8 rounded-[20px] mt-8 mb-5">
-				<h3 className="text-[#0F0A19] font-semibold mb-7">
+			<div className="supplierPayment p-5 md:p-8 rounded-[20px] mt-5 md:mt-8 mb-5">
+				<h3 className="text-[#0F0A19] text-xl md:text-2xl font-semibold mb-7">
 					Premium Supplier Plan
 				</h3>
 				<div className="flex flex-col gap-5">
 					<div className="flex justify-between">
 						<p className="text-[#0F0A19]">Orignal Price:</p>
 						<p className="line-through text-lg font-medium text-[#FF3A5E]">
-							€300
+							€19,90
 						</p>
 					</div>
 					<div className="flex justify-between">
-						<p className="text-[#0F0A19]">Pre Launch Discount:</p>
-						<p className="text-lg font-medium">60% Off</p>
+						<p className="text-[#0F0A19] text-sm md:text-base">
+							Pre Launch Discount:
+						</p>
+						<p className="text-base md:text-lg font-medium">50%</p>
 					</div>
 					<div className="flex justify-between">
 						<p className="text-[#0F0A19]">Final Price:</p>
-						<p className="text-[32px] font-bold text-[#3D2278]">€120</p>
+						<p className="text-[32px] font-bold text-[#3D2278]">€9,95</p>
 					</div>
 				</div>
 			</div>

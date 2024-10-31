@@ -41,7 +41,7 @@ const SupplierAuthCard = ({
 		content = <SupplierPayment setOpen={setOpen} />;
 	}
 	return (
-		<div className="flex relative flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">
+		<div className="flex relative flex-col mx-8 bg-white rounded-2xl max-w-full">
 			{content}
 		</div>
 	);

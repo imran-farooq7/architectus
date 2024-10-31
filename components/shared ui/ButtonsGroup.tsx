@@ -14,8 +14,24 @@ const ButtonsGroup = ({
 		<div className="flex tabs gap-5 flex-wrap md:justify-center">
 			{isWorkout ? (
 				<>
-					<Button text="Modify" />
-					<Button text="Download" />
+					<div
+						onClick={() => {
+							setModalContent!("modify");
+							setOpen!(true);
+						}}
+						className="w-full md:w-fit"
+					>
+						<Button text="Modify" />
+					</div>
+					<div
+						className="w-full md:w-fit"
+						onClick={() => {
+							setModalContent!("download");
+							setOpen!(true);
+						}}
+					>
+						<Button text="Download" />
+					</div>
 				</>
 			) : (
 				<>

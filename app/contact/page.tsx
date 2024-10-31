@@ -16,7 +16,7 @@ const ContactUsPage = () => {
 			<div className="flex flex-col items-center gap-y-6 gap-x-[120px] px-6 lg:flex-row md lg:px-24 pt-10 md:pt-[100px] md:pb-20">
 				<div className="py-0 lg:py-16">
 					<h1 className=" text-[40px] pl-4 md:text-6xl lg:text-[64px] font-bold text-[#0F0A19]  leading-[1.2]">
-						Contact{" "}
+						Contacts{" "}
 						<span className="relative">
 							<span className="text-[#3D2278]">Us</span>
 							<Image
@@ -40,12 +40,12 @@ const ContactUsPage = () => {
 						<ContactContainer
 							icon={Address}
 							title="Address"
-							text="Consoli Tech, LLC 1234 Innovation Way Suite 300 Atlanta, GA 30301"
+							text="Klijānu iela 16, Apartment No. 97, LV-1013"
 						/>
 						<ContactContainer
 							icon={Email}
 							title="Email"
-							text="info@consolitech.com"
+							text="workout-creator@proton.me"
 						/>
 					</div>
 				</div>
@@ -69,12 +69,12 @@ const ContactUsPage = () => {
 					<ContactContainer
 						icon={Address}
 						title="Address"
-						text="Consoli Tech, LLC 1234 Innovation Way Suite 300 Atlanta, GA 30301"
+						text="Klijānu iela 16, Apartment No. 97, LV-1013"
 					/>
 					<ContactContainer
 						icon={Email}
 						title="Email"
-						text="info@consolitech.com"
+						text="workout-creator@proton.me"
 					/>
 				</div>
 			</div>
