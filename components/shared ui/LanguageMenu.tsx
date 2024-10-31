@@ -2,7 +2,7 @@ import Eng from "@/public/flageng.svg";
 import Brazil from "@/public/flagbrazil.svg";
 import Russia from "@/public/flagrussia.svg";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -11,9 +11,23 @@ const LanguageMenu = () => {
 	return (
 		<div className="w-52 text-right">
 			<Menu>
-				<MenuButton className="inline-flex items-center gap-2 rounded-md bg-transparent py-1.5 focus:outline-none ">
-					<Image src={lang} alt="language" />
-					<ChevronDownIcon className="size-4 fill-black" />
+				<MenuButton className="inline-flex menu-button items-center gap-2 rounded-xl p-3 focus:outline-none ">
+					{({ active }) => (
+						<>
+							{" "}
+							<Image src={lang} alt="language" />
+							<ChevronDownIcon
+								className={`${
+									active ? "hidden" : "inline-flex size-4 fill-black"
+								}`}
+							/>
+							<ChevronUpIcon
+								className={`${
+									active ? "inline-flex size-4 fill-black" : "hidden "
+								}`}
+							/>
+						</>
+					)}
 				</MenuButton>
 
 				<MenuItems

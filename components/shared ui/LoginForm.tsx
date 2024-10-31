@@ -1,9 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import LineLeft from "@/public/Line left.png";
 import Cross from "@/public/close.png";
-import Google from "@/public/Google.svg";
-import Apple from "@/public/apple.svg";
+import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
 const LoginForm = ({
@@ -18,8 +14,8 @@ const LoginForm = ({
 	setCurrentAuth: Dispatch<SetStateAction<string>>;
 }) => {
 	return (
-		<div className="p-8">
-			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">
+		<div>
+			<h1 className="font-bold text-2xl mt-3 text-[#0B0B0B] text-left">
 				{title} Login
 			</h1>
 			<p className="mt-4  text-[#6D6D6D] text-left text-sm">{description}</p>
@@ -27,7 +23,7 @@ const LoginForm = ({
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-[30px] right-[30px] absolute cursor-pointer"
+				className="top-4 right-4 absolute cursor-pointer"
 			/>
 
 			<div className="gap-5 flex flex-col mt-8 gap-y-5">

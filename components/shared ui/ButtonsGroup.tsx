@@ -11,7 +11,7 @@ const ButtonsGroup = ({
 	setOpen?: Dispatch<SetStateAction<boolean>>;
 }) => {
 	return (
-		<div className="flex tabs gap-5 flex-wrap md:justify-center">
+		<div className="flex tabs gap-5 gap-y-4 md:justify-center">
 			{isWorkout ? (
 				<>
 					<div
@@ -19,12 +19,12 @@ const ButtonsGroup = ({
 							setModalContent!("modify");
 							setOpen!(true);
 						}}
-						className="w-full md:w-fit"
+						className="w-fit"
 					>
 						<Button text="Modify" />
 					</div>
 					<div
-						className="w-full md:w-fit"
+						className="w-fit"
 						onClick={() => {
 							setModalContent!("download");
 							setOpen!(true);
@@ -35,26 +35,31 @@ const ButtonsGroup = ({
 				</>
 			) : (
 				<>
-					<Button text="Body Scan" />
-					<div
-						onClick={() => {
-							setModalContent!("modify");
-							setOpen!(true);
-						}}
-						className="w-full md:w-fit"
-					>
-						<Button text="Modify" />
+					<div className="flex gap-5 flex-col md:flex-row">
+						{" "}
+						<Button text="Body Scan" />
+						<div
+							onClick={() => {
+								setModalContent!("modify");
+								setOpen!(true);
+							}}
+							className="w-full md:w-fit"
+						>
+							<Button text="Modify" />
+						</div>
 					</div>
-					<div
-						className="w-full md:w-fit"
-						onClick={() => {
-							setModalContent!("download");
-							setOpen!(true);
-						}}
-					>
-						<Button text="Download" />
+					<div className="flex gap-5 flex-col md:flex-row">
+						<div
+							className="w-full md:w-fit"
+							onClick={() => {
+								setModalContent!("download");
+								setOpen!(true);
+							}}
+						>
+							<Button text="Download" />
+						</div>
+						<Button text="Share" />
 					</div>
-					<Button text="Share" />
 				</>
 			)}
 		</div>

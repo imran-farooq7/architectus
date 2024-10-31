@@ -15,16 +15,16 @@ const CoachSignup = ({
 	isSupplier: boolean;
 }) => {
 	return (
-		<div className="p-8 h-[80vh]  overflow-y-scroll">
+		<div>
 			<Image
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-[15px] right-[30px] absolute cursor-pointer"
+				className="top-2 right-4 absolute cursor-pointer"
 			/>
 			<div className="my-4">
 				{isSupplier ? (
-					<div className="relative w-full">
+					<div className="relative mt-6 w-full">
 						<div className=" relative borderUpload py-10" id="dropzone">
 							<input
 								type="file"
