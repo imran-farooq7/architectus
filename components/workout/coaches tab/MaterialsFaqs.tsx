@@ -149,7 +149,7 @@ const Coaches = () => {
 			</div>
 			<Modal open={open} setOpen={setOpen}>
 				<div className="flex relative flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">
-					<Download setOpen={setOpen} />
+					<Download isCoach setOpen={setOpen} />
 				</div>
 			</Modal>
 		</div>

@@ -45,7 +45,7 @@ const CreateCard = ({
 				<div className="relative my-8">
 					<textarea
 						placeholder="Type"
-						className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 pt-4 border-[#E7E7E7] w-full md:w-[540px] rounded-xl bg-[#FAFAFA] h-36"
+						className="border placeholder:text-sm placeholder:text-[#9D9D9D] pl-5 pt-4 border-[#E7E7E7] w-full rounded-xl bg-[#FAFAFA] h-36"
 						value={transcript || text}
 						onChange={(e) => setText(e.target.value)}
 					/>
@@ -95,7 +95,9 @@ const CreateCard = ({
 			{isLoading ? (
 				<div className="flex flex-col items-center py-12">
 					<Image src={Loader} alt="loading" className="animate-spin" />
-					<p className="mt-8">Architectus Ai is analyzing your documentation</p>
+					<p className="mt-8 text-center">
+						Architectus Ai is analyzing your documentation
+					</p>
 					<Image
 						src={Cross}
 						alt="close"

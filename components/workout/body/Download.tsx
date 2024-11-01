@@ -6,14 +6,16 @@ import Clipboard from "@/public/clipboard.svg";
 
 const Download = ({
 	setOpen,
+	isCoach,
 }: {
 	setOpen: Dispatch<SetStateAction<boolean>>;
+	isCoach?: boolean;
 }) => {
 	const textRef = useRef<HTMLParagraphElement>(null);
 	return (
 		<div className="">
 			<h1 className="font-bold text-2xl mb-10 text-[#0B0B0B] text-left">
-				Download
+				{isCoach ? "Share" : "Download"}
 			</h1>
 			<Image
 				src={Cross}
@@ -38,9 +40,11 @@ const Download = ({
 						}
 					/>
 				</div>
-				<button className="bg-transparent border border-[#3D2278] md:text-lg text-[#3D2278]  w-full h-[52px] rounded-[10px]  transition-all ease-in-out text-sm">
-					Download
-				</button>
+				{!isCoach && (
+					<button className="bg-transparent border border-[#3D2278] md:text-lg text-[#3D2278]  w-full h-[52px] rounded-[10px]  transition-all ease-in-out text-sm">
+						Download
+					</button>
+				)}
 			</div>
 		</div>
 	);
