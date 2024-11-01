@@ -58,7 +58,15 @@ const ButtonsGroup = ({
 						>
 							<Button text="Download" />
 						</div>
-						<Button text="Share" />
+						<div
+							className="w-full md:w-fit"
+							onClick={() => {
+								setModalContent!("share");
+								setOpen!(true);
+							}}
+						>
+							<Button text="Share" />
+						</div>
 					</div>
 				</>
 			)}

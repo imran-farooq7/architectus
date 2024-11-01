@@ -21,7 +21,7 @@ const Download = ({
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-[30px] right-[30px] absolute cursor-pointer"
+				className="top-4 right-4 absolute cursor-pointer"
 			/>
 			<div className="px-0 md:px-20">
 				<div className="download py-10 mb-8 px-16 rounded-[20px]">

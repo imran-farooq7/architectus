@@ -90,13 +90,16 @@ const CreateCard = ({
 	if (modalContent === "download") {
 		content = <Download setOpen={setOpen} />;
 	}
+	if (modalContent === "share") {
+		content = <Download isCoach setOpen={setOpen} />;
+	}
 	return (
 		<div className="flex relative flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">
 			{isLoading ? (
 				<div className="flex flex-col items-center py-12">
 					<Image src={Loader} alt="loading" className="animate-spin" />
 					<p className="mt-8 text-center">
-						Architectus Ai is analyzing your documentation
+						Workout Created is analyzing your documentation
 					</p>
 					<Image
 						src={Cross}

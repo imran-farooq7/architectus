@@ -3,7 +3,7 @@ import Reviews from "@/components/reviews/Reviews";
 import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
 import Modal from "@/components/shared ui/Modal";
 import Line from "@/public/linewrk.png";
-import Img1 from "@/public/wot.svg";
+import Img1 from "@/public/workoutnew.svg";
 import Image from "next/image";
 import { useState } from "react";
 import CreateCard from "../body/CreateCard";
