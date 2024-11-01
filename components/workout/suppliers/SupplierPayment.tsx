@@ -4,8 +4,10 @@ import { Dispatch, SetStateAction } from "react";
 
 const SupplierPayment = ({
 	setOpen,
+	isBuyer,
 }: {
 	setOpen: Dispatch<SetStateAction<boolean>>;
+	isBuyer?: boolean;
 }) => {
 	return (
 		<div className="flex flex-col">
@@ -45,12 +47,14 @@ const SupplierPayment = ({
 				</div>
 			</div>
 			<div className="gap-5 flex flex-col items-center gap-y-5">
-				<button
-					onClick={() => setOpen(false)}
-					className="bg-transparent order-2 border border-[#3D2278] md:text-lg text-[#3D2278]  w-full h-[52px] rounded-[10px] hover:bg-[#3D2278] hover:border-none hover:text-white hover:scale-105 transition-all ease-in-out text-sm"
-				>
-					Edit Details
-				</button>
+				{!isBuyer && (
+					<button
+						onClick={() => setOpen(false)}
+						className="bg-transparent order-2 border border-[#3D2278] md:text-lg text-[#3D2278]  w-full h-[52px] rounded-[10px] hover:bg-[#3D2278] hover:border-none hover:text-white hover:scale-105 transition-all ease-in-out text-sm"
+					>
+						Edit Details
+					</button>
+				)}
 				<button className="bg-[#3D2278] order-1 md:text-lg text-white w-full h-[52px] rounded-[10px] text-sm">
 					Pay Now
 				</button>

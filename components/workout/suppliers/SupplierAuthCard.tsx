@@ -40,8 +40,11 @@ const SupplierAuthCard = ({
 	if (currentAuth === "supplierPayment") {
 		content = <SupplierPayment setOpen={setOpen} />;
 	}
+	if (currentAuth === "buyerPayment") {
+		content = <SupplierPayment setOpen={setOpen} isBuyer />;
+	}
 	return (
-		<div className="flex relative flex-col p-4 mx-4 md:mx-8 bg-white md:p-8 rounded-2xl max-w-full">
+		<div className="flex relative flex-col p-4 mx-4 md:mx-8 bg-white md:p-8 rounded-2xl min-w-[393px] max-w-full">
 			{content}
 		</div>
 	);

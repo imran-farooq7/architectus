@@ -37,7 +37,7 @@ const ProductCard = ({
 					</div>
 					<button
 						onClick={() => {
-							onClick("supplierPayment");
+							onClick("buyerPayment");
 							setOpen(true);
 						}}
 						className="bg-[#3D2278] mt-5 font-medium text-sm text-white w-full py-3 rounded-xl"

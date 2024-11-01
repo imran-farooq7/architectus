@@ -163,7 +163,7 @@ const VideoUpload = () => {
 							width="284" // Adjust the width as needed
 							height="160"
 							ref={videoRef2}
-							className="mx-auto"
+							className="mx-auto aspect-video"
 						>
 							Your browser does not support the video tag.
 						</video>
