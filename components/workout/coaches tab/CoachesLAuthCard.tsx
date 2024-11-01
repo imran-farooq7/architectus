@@ -39,7 +39,7 @@ const CoachesAuthCard = ({
 		content = <ForgetPassword setOpen={setOpen} />;
 	}
 	return (
-		<div className="flex relative flex-col p-4 mx-4 md:mx-8 bg-white rounded-2xl md:p-8 max-w-full">
+		<div className="flex relative flex-col min-w-[393px] p-4 mx-4 md:mx-8 bg-white rounded-2xl md:p-8 max-w-full">
 			{content}
 		</div>
 	);

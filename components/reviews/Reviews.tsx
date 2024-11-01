@@ -31,7 +31,7 @@ const Reviews = ({ isCoach }: { isCoach: boolean }) => {
 				<div>
 					<div>
 						<div>
-							<div className="flex flex-col md:flex-row items-start md:items-center max-w-[600px] mb-0 md:mb-8 justify-between">
+							<div className="flex flex-col md:flex-row items-start md:items-center lg:max-w-[600px] mb-0 md:mb-8 justify-between">
 								<h1 className="text-xl md:text-[32px] font-semibold leading-8">
 									Reviews (160)
 								</h1>

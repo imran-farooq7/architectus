@@ -16,7 +16,7 @@ const Navbar = ({
 	isLandingPage?: boolean;
 }) => {
 	return (
-		<div className="px-5 md:px-20 navbar">
+		<div className="px-5 lg:px-20 navbar">
 			<header className="z-50">
 				<nav className="flex items-center justify-between" aria-label="Global">
 					<div className="flex lg:flex-1">
