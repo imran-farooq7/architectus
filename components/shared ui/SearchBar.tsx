@@ -58,7 +58,7 @@ const SearchBar = ({
 			<div className="flex gap-[10px] items-center">
 				<Image src={Comment} alt="comment" />
 
-				<p>{content}</p>
+				{content}
 			</div>
 		</div>
 	);

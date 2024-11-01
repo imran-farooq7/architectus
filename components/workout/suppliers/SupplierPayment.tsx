@@ -8,7 +8,7 @@ const SupplierPayment = ({
 	setOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
 	return (
-		<div className="flex relative flex-col">
+		<div className="flex flex-col">
 			<h1 className="font-bold mt-4 text-xl  md:text-2xl text-[#0B0B0B] text-left">
 				Supplier Plan
 			</h1>
@@ -19,7 +19,7 @@ const SupplierPayment = ({
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-1 right-1 absolute cursor-pointer"
+				className="top-4 right-4 absolute cursor-pointer"
 			/>
 			<div className="supplierPayment p-5 md:p-8 rounded-[20px] mt-5 md:mt-8 mb-5">
 				<h3 className="text-[#0F0A19] text-xl md:text-2xl font-semibold mb-7">
