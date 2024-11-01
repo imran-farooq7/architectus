@@ -86,14 +86,15 @@ const SuppliersTab = () => {
 					discountedPrice="€9,95"
 				/>{" "}
 			</Carousel>
-			<Carousel slides={4} isSupplier>
+
+			<div className="flex justify-center">
 				<SupplierCard image={Skan} />
-				<SupplierCard image={Ncc} />
+			</div>
+			{/* <SupplierCard image={Ncc} />
 				<SupplierCard image={Hoc} />
 				<SupplierCard image={Stra} />
 				<SupplierCard image={Zcr} />
-				<SupplierCard image={Zublin} />
-			</Carousel>
+				<SupplierCard image={Zublin} /> */}
 
 			<Reviews isCoach={false} />
 			<Modal open={open} setOpen={setOpen}>

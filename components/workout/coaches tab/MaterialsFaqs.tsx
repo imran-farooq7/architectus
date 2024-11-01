@@ -14,8 +14,12 @@ import {
 } from "@headlessui/react";
 import Image from "next/image";
 import Reviews from "@/components/reviews/Reviews";
+import { useState } from "react";
+import Download from "../body/Download";
+import Modal from "@/components/shared ui/Modal";
 
 const Coaches = () => {
+	const [open, setOpen] = useState(false);
 	return (
 		<div>
 			<div className="max-w-7xl mx-auto mb-20">
@@ -37,7 +41,13 @@ const Coaches = () => {
 												<span className="ml-6 flex h-7 items-center">
 													{open ? (
 														<div className="flex gap-8">
-															<Image src={Share} alt="share" />
+															<Image
+																src={Share}
+																alt="share"
+																onClick={(e) => {
+																	setOpen(true);
+																}}
+															/>
 															<Image src={Minus} alt="minus" />
 														</div>
 													) : (
@@ -53,7 +63,14 @@ const Coaches = () => {
 																))}
 															</div>
 															<div className="flex gap-8">
-																<Image src={Share} alt="share" />
+																<Image
+																	src={Share}
+																	alt="share"
+																	onClick={(e) => {
+																		e.stopPropagation();
+																		setOpen(true);
+																	}}
+																/>
 																<Image src={Plus} alt="plus" />
 															</div>
 														</div>
@@ -130,6 +147,11 @@ const Coaches = () => {
 					))}
 				</dl>
 			</div>
+			<Modal open={open} setOpen={setOpen}>
+				<div className="flex relative flex-col mx-8 bg-white rounded-2xl p-8 max-w-full">
+					<Download setOpen={setOpen} />
+				</div>
+			</Modal>
 		</div>
 	);
 };
