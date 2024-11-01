@@ -4,20 +4,15 @@ import Button from "@/components/shared ui/Button";
 import Carousel from "@/components/shared ui/Carousel";
 import Modal from "@/components/shared ui/Modal";
 import SearchBar from "@/components/shared ui/SearchBar";
-import Hoc from "@/public/hoc.png";
 import Skan from "@/public/image 12.png";
-import Ncc from "@/public/ncc.png";
-import Stra from "@/public/strabag.png";
-import Zcr from "@/public/zcr.png";
-import Zublin from "@/public/zublin.svg";
-import { useState } from "react";
-import ProductCard from "./ProductCard";
-import SupplierAuthCard from "./SupplierAuthCard";
-import SupplierCard from "./SupplierCard";
 import P1 from "@/public/p1.svg";
 import P2 from "@/public/p2.svg";
 import P3 from "@/public/p3.svg";
 import P4 from "@/public/p4.svg";
+import { useState } from "react";
+import ProductCard from "./ProductCard";
+import SupplierAuthCard from "./SupplierAuthCard";
+import SupplierCard from "./SupplierCard";
 
 const SuppliersTab = () => {
 	const [open, setOpen] = useState(false);
@@ -87,7 +82,7 @@ const SuppliersTab = () => {
 				/>{" "}
 			</Carousel>
 
-			<div className="flex justify-center">
+			<div className="flex justify-center mt-20">
 				<SupplierCard image={Skan} />
 			</div>
 			{/* <SupplierCard image={Ncc} />
