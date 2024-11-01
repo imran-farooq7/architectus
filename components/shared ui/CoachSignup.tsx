@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Upload from "@/public/avatar upload.svg";
-import VideoUpload from "@/public/vidupicon.svg";
 import Cross from "@/public/close.png";
+import VideoUp from "@/public/vidupicon.svg";
+
 import { Dispatch, SetStateAction } from "react";
 import Eng from "@/public/eng.svg";
+import VideoUpload from "../workout/coaches tab/VideoUpload";
 
 const CoachSignup = ({
 	setOpen,
@@ -15,7 +17,7 @@ const CoachSignup = ({
 	isSupplier: boolean;
 }) => {
 	return (
-		<div>
+		<div className="h-[90vh] overflow-y-scroll overflow-x-hidden">
 			<Image
 				src={Cross}
 				alt="close"
@@ -31,7 +33,7 @@ const CoachSignup = ({
 								className="absolute inset-0 w-full h-full opacity-0 z-50"
 							/>
 							<div className="text-center">
-								<Image src={VideoUpload} alt="upload" className="mx-auto" />
+								<Image src={VideoUp} alt="upload" className="mx-auto" />
 
 								<h3 className="mt-6 text-sm font-normal text-[#0B0B0B]">
 									<label
@@ -100,68 +102,9 @@ const CoachSignup = ({
 				<div
 					className={`${
 						isSupplier ? "hidden" : "flex"
-					}  flex-wrap justify-between gap-y-5`}
+					}   justify-between flex-col gap-y-5`}
 				>
-					<div className="relative w-full  md:w-[260px]">
-						<div className=" relative borderUpload py-10" id="dropzone">
-							<input
-								type="file"
-								className="absolute inset-0 w-full h-full opacity-0 z-50"
-							/>
-							<div className="text-center">
-								<Image src={VideoUpload} alt="upload" className="mx-auto" />
-
-								<h3 className="mt-6 text-sm font-normal text-[#0B0B0B]">
-									<label
-										htmlFor="file-upload"
-										className="relative cursor-pointer"
-									>
-										<span>Drag and drop</span>
-										<span className="text-[#3D2278] font-semibold">
-											{" "}
-											or browse
-										</span>
-										<input
-											id="file-upload"
-											name="file-upload"
-											type="file"
-											className="sr-only"
-										/>
-									</label>
-								</h3>
-							</div>
-						</div>
-					</div>
-					<div className="relative w-full md:w-[260px]">
-						<div className="relative borderUpload py-10" id="dropzone">
-							<input
-								type="file"
-								className="absolute inset-0 w-full h-full opacity-0 z-50"
-							/>
-							<div className="text-center">
-								<Image src={VideoUpload} alt="upload" className="mx-auto" />
-
-								<h3 className="mt-6 text-sm font-normal text-[#0B0B0B]">
-									<label
-										htmlFor="file-upload"
-										className="relative cursor-pointer"
-									>
-										<span>Drag and drop</span>
-										<span className="text-[#3D2278] font-semibold">
-											{" "}
-											or browse
-										</span>
-										<input
-											id="file-upload"
-											name="file-upload"
-											type="file"
-											className="sr-only"
-										/>
-									</label>
-								</h3>
-							</div>
-						</div>
-					</div>
+					<VideoUpload />
 				</div>
 				<div className="relative">
 					{" "}

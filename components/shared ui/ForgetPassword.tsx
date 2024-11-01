@@ -9,7 +9,7 @@ const ForgetPassword = ({
 }) => {
 	return (
 		<>
-			<h1 className="font-bold text-2xl text-[#0B0B0B] text-left">
+			<h1 className="font-bold mt-4 text-2xl text-[#0B0B0B] text-left">
 				Forgot password
 			</h1>
 			<p className="mt-4  text-[#6D6D6D] text-left text-sm">
@@ -19,7 +19,7 @@ const ForgetPassword = ({
 				src={Cross}
 				alt="close"
 				onClick={() => setOpen(false)}
-				className="top-[30px] right-[30px] absolute cursor-pointer"
+				className="top-4 right-5 absolute cursor-pointer"
 			/>
 
 			<div className="gap-5 flex flex-col mt-8 gap-y-5">

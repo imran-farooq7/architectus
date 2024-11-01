@@ -33,7 +33,8 @@ const CreateCard = ({
 					{modalContent === "create" ? "Create" : "Modify"}
 				</h1>
 				<p className="mt-4  text-[#6D6D6D] text-left text-sm">
-					Lorem ipsum dolor sit amet consectetur adipiscing elit Vivamus.
+					Please describe in as much detail as possible what you intend to
+					create, update, or modify.{" "}
 				</p>
 				<Image
 					src={Cross}
