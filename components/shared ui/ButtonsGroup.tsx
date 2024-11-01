@@ -11,7 +11,7 @@ const ButtonsGroup = ({
 	setOpen?: Dispatch<SetStateAction<boolean>>;
 }) => {
 	return (
-		<div className="flex tabs gap-4 gap-y-4 justify-evenly md:justify-center">
+		<div className="flex tabs gap-4 justify-evenly gap-y-4 md:justify-center">
 			{isWorkout ? (
 				<>
 					<div

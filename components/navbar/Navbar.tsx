@@ -4,7 +4,9 @@ import LogoWhite from "@/public/logocap.svg";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Contact from "@/public/contact.svg";
+import ContactMobile from "@/public/contactmobile.svg";
 import LanguageMenu from "../shared ui/LanguageMenu";
+import HeadPhone from "@/public/headphone.svg";
 
 const Navbar = ({
 	logo,
@@ -27,21 +29,27 @@ const Navbar = ({
 							/>
 						</Link>
 					</div>
-					{/* <div className="flex lg:hidden">
-						<button
-							type="button"
-							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-							onClick={() => setMobileMenuOpen(true)}
-						>
-							<span className="sr-only">Open main menu</span>
-							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
-						</button>
-					</div> */}
 
-					<div className="flex items-center">
+					<div className="flex items-center gap-5 md:gap-0">
 						<LanguageMenu />
-						<Link href={"/contact"}>
+						<Link href={"/contact"} className="hidden md:inline-flex">
 							<Image src={Contact} alt="contact us" />
+						</Link>
+
+						<Link
+							href={"/contact"}
+							className="bg-[#3D2278] md:hidden items-center justify-center rounded-xl flex w-10 h-10"
+						>
+							{/* <Image
+								src={Contact}
+								alt="contact us"
+								className="hidden md:inline-flex"
+							/> */}
+							<Image
+								src={HeadPhone}
+								alt="contact us"
+								className="inline-flex md:hidden"
+							/>
 						</Link>
 					</div>
 				</nav>
