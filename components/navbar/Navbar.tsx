@@ -1,5 +1,5 @@
 "use client";
-import Logo from "@/public/logonew.svg";
+import Logo from "@/public/workoutlogo.svg";
 import LogoWhite from "@/public/logocap.svg";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";

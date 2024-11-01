@@ -10,7 +10,7 @@ import { useState } from "react";
 const LanguageMenu = () => {
 	const [lang, setLang] = useState(Eng);
 	return (
-		<div className="w-52 hidden md:block text-right">
+		<div className=" text-right">
 			<Menu>
 				<MenuButton
 					className="inline-flex langMenu

@@ -8,6 +8,8 @@ const ProductCard = ({
 	image,
 	price,
 	title,
+	onClick,
+	setOpen,
 }: ProductCardProps) => {
 	return (
 		<div className="flex flex-col justify-center items-center rounded-[14px] h-full">
@@ -33,7 +35,13 @@ const ProductCard = ({
 							</p>
 						</div>
 					</div>
-					<button className="bg-[#3D2278] mt-5 font-medium text-sm text-white w-full py-3 rounded-xl">
+					<button
+						onClick={() => {
+							onClick("supplierPayment");
+							setOpen(true);
+						}}
+						className="bg-[#3D2278] mt-5 font-medium text-sm text-white w-full py-3 rounded-xl"
+					>
 						Buy Now
 					</button>
 				</div>

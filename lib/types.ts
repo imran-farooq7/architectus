@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { Dispatch, SetStateAction } from "react";
 
 export interface NavLinkProps {
 	href: string;
@@ -37,4 +38,6 @@ export interface ProductCardProps {
 	brand: string;
 	price: string;
 	discountedPrice: string;
+	onClick: Dispatch<SetStateAction<string>>;
+	setOpen: Dispatch<SetStateAction<boolean>>;
 }

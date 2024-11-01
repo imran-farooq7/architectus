@@ -16,7 +16,6 @@ import SupplierCard from "./SupplierCard";
 
 const SuppliersTab = () => {
 	const [open, setOpen] = useState(false);
-	const [openUploadForm, setOpenUploadForm] = useState(false);
 	const [currentAuth, setCurrentAuth] = useState("login");
 
 	return (
@@ -58,6 +57,8 @@ const SuppliersTab = () => {
 					brand="Kaged Muscle"
 					price="€19,90"
 					discountedPrice="€9,95"
+					onClick={setCurrentAuth}
+					setOpen={setOpen}
 				/>{" "}
 				<ProductCard
 					image={P2}
@@ -65,6 +66,8 @@ const SuppliersTab = () => {
 					brand="Smartys"
 					price="€19,90"
 					discountedPrice="€9,95"
+					onClick={setCurrentAuth}
+					setOpen={setOpen}
 				/>{" "}
 				<ProductCard
 					image={P3}
@@ -72,6 +75,8 @@ const SuppliersTab = () => {
 					brand="Bowflex"
 					price="€19,90"
 					discountedPrice="€9,95"
+					onClick={setCurrentAuth}
+					setOpen={setOpen}
 				/>{" "}
 				<ProductCard
 					image={P4}
@@ -79,6 +84,8 @@ const SuppliersTab = () => {
 					brand="Nike"
 					price="€19,90"
 					discountedPrice="€9,95"
+					onClick={setCurrentAuth}
+					setOpen={setOpen}
 				/>{" "}
 			</Carousel>
 
