@@ -4,9 +4,11 @@ import Slider from "react-slick";
 const Carousel = ({
 	children,
 	slides,
+	isSupplier,
 }: {
 	children: React.ReactNode;
 	slides: number;
+	isSupplier?: boolean;
 }) => {
 	const settings = {
 		dots: true,
@@ -39,7 +41,7 @@ const Carousel = ({
 			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: slides,
+					slidesToShow: isSupplier ? 4 : 1,
 					slidesToScroll: 1,
 					centerPadding: "0px",
 					vertical: true,

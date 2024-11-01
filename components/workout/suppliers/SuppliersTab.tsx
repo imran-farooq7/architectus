@@ -1,22 +1,23 @@
 "use client";
+import Reviews from "@/components/reviews/Reviews";
+import Button from "@/components/shared ui/Button";
+import Carousel from "@/components/shared ui/Carousel";
 import Modal from "@/components/shared ui/Modal";
-import Plus from "@/public/add.png";
-import Down from "@/public/down.png";
+import SearchBar from "@/components/shared ui/SearchBar";
 import Hoc from "@/public/hoc.png";
 import Skan from "@/public/image 12.png";
 import Ncc from "@/public/ncc.png";
 import Stra from "@/public/strabag.png";
 import Zcr from "@/public/zcr.png";
 import Zublin from "@/public/zublin.svg";
-import Image from "next/image";
 import { useState } from "react";
-import SupplierCard from "./SupplierCard";
-import UploadSupplierForm from "./UploadSupplierForm";
-import Carousel from "@/components/shared ui/Carousel";
-import Button from "@/components/shared ui/Button";
+import ProductCard from "./ProductCard";
 import SupplierAuthCard from "./SupplierAuthCard";
-import SearchBar from "@/components/shared ui/SearchBar";
-import Reviews from "@/components/reviews/Reviews";
+import SupplierCard from "./SupplierCard";
+import P1 from "@/public/p1.svg";
+import P2 from "@/public/p2.svg";
+import P3 from "@/public/p3.svg";
+import P4 from "@/public/p4.svg";
 
 const SuppliersTab = () => {
 	const [open, setOpen] = useState(false);
@@ -55,8 +56,37 @@ const SuppliersTab = () => {
 				</div>
 			</div>
 			<SearchBar isSupplier />
-
 			<Carousel slides={4}>
+				<ProductCard
+					image={P1}
+					title="Beta-Alanine"
+					brand="Kaged Muscle"
+					price="€19,90"
+					discountedPrice="€9,95"
+				/>{" "}
+				<ProductCard
+					image={P2}
+					title="Foods Vitamin D3"
+					brand="Smartys"
+					price="€19,90"
+					discountedPrice="€9,95"
+				/>{" "}
+				<ProductCard
+					image={P3}
+					title="Dumbbells"
+					brand="Bowflex"
+					price="€19,90"
+					discountedPrice="€9,95"
+				/>{" "}
+				<ProductCard
+					image={P4}
+					title="Running Shorts"
+					brand="Nike"
+					price="€19,90"
+					discountedPrice="€9,95"
+				/>{" "}
+			</Carousel>
+			<Carousel slides={4} isSupplier>
 				<SupplierCard image={Skan} />
 				<SupplierCard image={Ncc} />
 				<SupplierCard image={Hoc} />
@@ -64,6 +94,7 @@ const SuppliersTab = () => {
 				<SupplierCard image={Zcr} />
 				<SupplierCard image={Zublin} />
 			</Carousel>
+
 			<Reviews isCoach={false} />
 			<Modal open={open} setOpen={setOpen}>
 				<SupplierAuthCard

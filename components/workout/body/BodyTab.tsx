@@ -1,12 +1,12 @@
 "use client";
-import Image from "next/image";
-import Workout from "@/public/workout.png";
-import WorkoutMobile from "@/public/bodymobile.png";
-import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
-import { useState } from "react";
-import Modal from "@/components/shared ui/Modal";
-import CreateCard from "./CreateCard";
 import Reviews from "@/components/reviews/Reviews";
+import ButtonsGroup from "@/components/shared ui/ButtonsGroup";
+import Modal from "@/components/shared ui/Modal";
+import WorkoutMobile from "@/public/bodymobile.png";
+import Workout from "@/public/workout.png";
+import Image from "next/image";
+import { useState } from "react";
+import CreateCard from "./CreateCard";
 
 const BodyTab = () => {
 	const [open, setOpen] = useState(false);
@@ -40,7 +40,6 @@ const BodyTab = () => {
 			/>
 			<ButtonsGroup setModalContent={setModalContent} setOpen={setOpen} />
 			<Reviews isCoach={false} />
-
 			<Modal open={open} setOpen={setOpen}>
 				<CreateCard setOpen={setOpen} modalContent={modalContent} />{" "}
 			</Modal>

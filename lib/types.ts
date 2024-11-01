@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface NavLinkProps {
 	href: string;
 	text: string;
@@ -28,4 +30,11 @@ export interface ReviewProps {
 	datetime: string;
 	author: string;
 	avatarSrc: string;
+}
+export interface ProductCardProps {
+	image: StaticImageData;
+	title: string;
+	brand: string;
+	price: string;
+	discountedPrice: string;
 }

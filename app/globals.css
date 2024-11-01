@@ -167,14 +167,6 @@ select {
 }
 .langMenu {
 	background: linear-gradient(
-		278.14deg,
-		rgba(253, 241, 255, 0.85) 5.41%,
-		rgba(248, 248, 248, 0.85) 50.97%,
-		rgba(236, 235, 255, 0.85) 96.52%
-	);
-}
-.menu-button {
-	background: linear-gradient(
 		111.61deg,
 		#ffffff 15.17%,
 		#f9f9f9 55.5%,
@@ -183,6 +175,7 @@ select {
 	backdrop-filter: blur(13px);
 	box-shadow: 0px 0px 12px 0px rgba(15, 10, 25, 0.1);
 }
+
 ::-webkit-scrollbar {
 	display: none;
 }

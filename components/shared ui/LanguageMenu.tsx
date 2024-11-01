@@ -10,9 +10,12 @@ import { useState } from "react";
 const LanguageMenu = () => {
 	const [lang, setLang] = useState(Eng);
 	return (
-		<div className="w-52 text-right">
+		<div className="w-52 hidden md:block text-right">
 			<Menu>
-				<MenuButton className="inline-flex menu-button items-center gap-2 rounded-xl p-3 focus:outline-none ">
+				<MenuButton
+					className="inline-flex langMenu
+				 items-center gap-2 rounded-xl p-3 focus:outline-none "
+				>
 					{({ active }) => (
 						<>
 							{" "}
