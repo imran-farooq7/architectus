@@ -27,7 +27,7 @@ const TutorialsTab = () => {
 				</h1>
 				<p className="text-sm mt-5 md:mt-8 md:text-lg font-normal leading-[26px] max-w-[21rem] md:max-w-[35rem]">
 					Now that you have the vision and the plan, on this page you'll find
-					the list of materials needed to start your journey without excuses.
+					the list of tutorials needed to start your journey without excuses.
 				</p>
 			</div>
 			<SearchBar isTutorial />
