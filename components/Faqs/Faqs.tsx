@@ -6,7 +6,7 @@ import {
 	DisclosureButton,
 	DisclosurePanel,
 } from "@headlessui/react";
-import { MinusSmallIcon } from "@heroicons/react/24/outline";
+import Minus from "@/public/minus.svg";
 import Image from "next/image";
 
 export default function Faqs() {
@@ -31,10 +31,7 @@ export default function Faqs() {
 											</span>
 											<span className="ml-6 flex h-7 items-center">
 												{open ? (
-													<MinusSmallIcon
-														className="h-6 w-6"
-														aria-hidden="true"
-													/>
+													<Image src={Minus} alt="minus" />
 												) : (
 													<Image src={Plus} alt="plus" />
 												)}
@@ -68,10 +65,7 @@ export default function Faqs() {
 											</span>
 											<span className="ml-4 flex h-7 items-center">
 												{open ? (
-													<MinusSmallIcon
-														className="h-6 w-6"
-														aria-hidden="true"
-													/>
+													<Image src={Minus} alt="minus" />
 												) : (
 													<Image src={Plus} alt="plus" width={16} height={16} />
 												)}

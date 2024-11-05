@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import VideoUp from "@/public/vidupicon.svg";
 import Image from "next/image";
 import PlayBtn from "@/public/play.svg";
+import ReactPlayer from "react-player";
 
 const VideoUpload = () => {
 	const [video1, setVideo1] = useState<File>();
@@ -90,13 +91,13 @@ const VideoUpload = () => {
 				</div>
 			) : (
 				<>
-					<div className="bg-[#FAFAFA] relative border-[#E7E7E7] border w-full rounded-xl">
+					<div className="bg-[#FAFAFA] relative border-[#E7E7E7] border rounded-xl">
 						<video
 							src={video1Preview}
-							width="284" // Adjust the width as needed
+							width="100%"
 							height="160"
 							ref={videoRef1}
-							className="mx-auto"
+							className="mx-auto !h-40"
 						>
 							Your browser does not support the video tag.
 						</video>
@@ -160,8 +161,8 @@ const VideoUpload = () => {
 					<div className="bg-[#FAFAFA] relative border-[#E7E7E7] border w-full rounded-xl">
 						<video
 							src={video2Preview}
-							width="284" // Adjust the width as needed
-							height="160"
+							// width="284"
+							// height="160"
 							ref={videoRef2}
 							className="mx-auto aspect-video"
 						>

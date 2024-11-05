@@ -11,7 +11,7 @@ import Reviews from "@/components/reviews/Reviews";
 const TutorialsTab = () => {
 	const [checked, setChecked] = useState(false);
 	return (
-		<div className="flex flex-col ">
+		<div className="flex flex-col mb-20">
 			<div className="my-14 md:my-20">
 				{" "}
 				<h1 className="max-w-full text-4xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">
@@ -46,7 +46,7 @@ const TutorialsTab = () => {
 			<div className="flex justify-center mt-8 md:mt-[60px]">
 				<Button text="Download" disabled={!checked} />
 			</div>
-			<Reviews isCoach={false} />
+			{/* <Reviews isCoach={false} /> */}
 		</div>
 	);
 };

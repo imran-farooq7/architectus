@@ -13,7 +13,7 @@ const WorkoutTab = () => {
 	const [open, setOpen] = useState(false);
 	const [modalContent, setModalContent] = useState("");
 	return (
-		<div>
+		<div className="mb-20">
 			<div className="flex flex-col gap-6 md:gap-8 my-14 md:my-20">
 				<h1 className="max-w-full text-4xl md:text-5xl lg:text-[64px] font-bold text-[#0F0A19] lg:max-w-2xl leading-[1.2]">
 					Your{" "}
@@ -51,7 +51,7 @@ const WorkoutTab = () => {
 				setModalContent={setModalContent}
 				setOpen={setOpen}
 			/>
-			<Reviews isCoach={false} />
+			{/* <Reviews isCoach={false} /> */}
 			<Modal open={open} setOpen={setOpen}>
 				<CreateCard setOpen={setOpen} modalContent={modalContent} />
 			</Modal>
